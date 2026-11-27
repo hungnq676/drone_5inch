@@ -1,0 +1,428 @@
+ĐUA QUA CỔNG chỉ bằng cảm biến: 240 drone / 10 nhân CPU, lô 61440 bước, 4882 lô (300M bước), học trên cuda
+  lô    10 (   0.6M): điểm  -20.4 | về đích   0% (TB  0.0 s) | đâm  14% | qua TB 0.1 cổng | nhiễu 0.56 |  0.03 h
+  lô    20 (   1.2M): điểm  -13.1 | về đích   0% (TB  0.0 s) | đâm  66% | qua TB 0.3 cổng | nhiễu 0.52 |  0.05 h
+  lô    30 (   1.8M): điểm  -11.2 | về đích   0% (TB  0.0 s) | đâm  84% | qua TB 0.3 cổng | nhiễu 0.51 |  0.08 h
+  lô    40 (   2.5M): điểm   -9.6 | về đích   0% (TB  0.0 s) | đâm  84% | qua TB 0.5 cổng | nhiễu 0.50 |  0.10 h
+  lô    50 (   3.1M): điểm   -8.2 | về đích   0% (TB  0.0 s) | đâm  93% | qua TB 0.6 cổng | nhiễu 0.48 |  0.13 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 4.4 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô    60 (   3.7M): điểm   -6.5 | về đích   0% (TB  0.0 s) | đâm  95% | qua TB 0.7 cổng | nhiễu 0.47 |  0.16 h
+  lô    70 (   4.3M): điểm   -5.4 | về đích   0% (TB  0.0 s) | đâm  98% | qua TB 0.8 cổng | nhiễu 0.45 |  0.18 h
+  lô    80 (   4.9M): điểm   -4.8 | về đích   0% (TB  0.0 s) | đâm  99% | qua TB 0.9 cổng | nhiễu 0.44 |  0.21 h
+  lô    90 (   5.5M): điểm   -3.1 | về đích   0% (TB  0.0 s) | đâm  99% | qua TB 1.0 cổng | nhiễu 0.42 |  0.23 h
+  lô   100 (   6.1M): điểm   -2.5 | về đích   0% (TB  0.0 s) | đâm  99% | qua TB 1.0 cổng | nhiễu 0.41 |  0.26 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 5.2 m/s
+  lô   110 (   6.8M): điểm   -2.1 | về đích   0% (TB  0.0 s) | đâm 100% | qua TB 1.0 cổng | nhiễu 0.40 |  0.28 h
+  lô   120 (   7.4M): điểm   -1.5 | về đích   0% (TB  0.0 s) | đâm 100% | qua TB 1.1 cổng | nhiễu 0.38 |  0.31 h
+  lô   130 (   8.0M): điểm    0.5 | về đích   0% (TB  0.0 s) | đâm 100% | qua TB 1.3 cổng | nhiễu 0.37 |  0.35 h
+  lô   140 (   8.6M): điểm    0.7 | về đích   0% (TB  5.6 s) | đâm 100% | qua TB 1.3 cổng | nhiễu 0.36 |  0.38 h
+  lô   150 (   9.2M): điểm    1.4 | về đích   0% (TB  6.7 s) | đâm 100% | qua TB 1.4 cổng | nhiễu 0.35 |  0.42 h
+  [chấm 20 map thi] về đích 0%, đâm 90%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 4.9 m/s
+  lô   160 (   9.8M): điểm    3.8 | về đích   1% (TB  5.3 s) | đâm  99% | qua TB 1.6 cổng | nhiễu 0.33 |  0.46 h
+  lô   170 (  10.4M): điểm    3.8 | về đích   1% (TB  4.1 s) | đâm  99% | qua TB 1.6 cổng | nhiễu 0.33 |  0.49 h
+  lô   180 (  11.1M): điểm    5.3 | về đích   1% (TB  5.4 s) | đâm  99% | qua TB 1.8 cổng | nhiễu 0.32 |  0.52 h
+  lô   190 (  11.7M): điểm    7.4 | về đích   3% (TB  5.6 s) | đâm  97% | qua TB 2.0 cổng | nhiễu 0.31 |  0.54 h
+  lô   200 (  12.3M): điểm   10.8 | về đích   6% (TB  5.0 s) | đâm  94% | qua TB 2.3 cổng | nhiễu 0.30 |  0.57 h
+  [chấm 20 map thi] về đích 0%, đâm 95%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 4.6 m/s
+  lô   210 (  12.9M): điểm   13.2 | về đích   7% (TB  5.0 s) | đâm  92% | qua TB 2.5 cổng | nhiễu 0.29 |  0.60 h
+  lô   220 (  13.5M): điểm   14.8 | về đích   8% (TB  4.9 s) | đâm  92% | qua TB 2.7 cổng | nhiễu 0.28 |  0.62 h
+  lô   230 (  14.1M): điểm   19.7 | về đích  14% (TB  5.4 s) | đâm  86% | qua TB 3.1 cổng | nhiễu 0.27 |  0.65 h
+  lô   240 (  14.7M): điểm   19.8 | về đích  13% (TB  5.0 s) | đâm  87% | qua TB 3.1 cổng | nhiễu 0.26 |  0.68 h
+  lô   250 (  15.4M): điểm   23.1 | về đích  17% (TB  5.3 s) | đâm  83% | qua TB 3.4 cổng | nhiễu 0.26 |  0.70 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 5.1 m/s
+  lô   260 (  16.0M): điểm   23.5 | về đích  18% (TB  5.1 s) | đâm  82% | qua TB 3.4 cổng | nhiễu 0.25 |  0.73 h
+  lô   270 (  16.6M): điểm   31.6 | về đích  28% (TB  5.3 s) | đâm  71% | qua TB 4.0 cổng | nhiễu 0.25 |  0.76 h
+  lô   280 (  17.2M): điểm   30.7 | về đích  28% (TB  5.6 s) | đâm  72% | qua TB 4.0 cổng | nhiễu 0.24 |  0.79 h
+  lô   290 (  17.8M): điểm   35.7 | về đích  34% (TB  5.2 s) | đâm  66% | qua TB 4.4 cổng | nhiễu 0.24 |  0.82 h
+  lô   300 (  18.4M): điểm   40.1 | về đích  40% (TB  5.2 s) | đâm  60% | qua TB 4.7 cổng | nhiễu 0.23 |  0.84 h
+  [chấm 20 map thi] về đích 5%, đâm 95%, TB 5.55 s/vòng, nhanh nhất 5.55 s, tốc độ max 5.9 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô   310 (  19.0M): điểm   38.9 | về đích  38% (TB  5.4 s) | đâm  62% | qua TB 4.6 cổng | nhiễu 0.23 |  0.88 h
+  lô   320 (  19.7M): điểm   42.7 | về đích  42% (TB  5.4 s) | đâm  58% | qua TB 4.9 cổng | nhiễu 0.22 |  0.90 h
+  lô   330 (  20.3M): điểm   51.0 | về đích  53% (TB  5.3 s) | đâm  47% | qua TB 5.6 cổng | nhiễu 0.22 |  0.93 h
+  lô   340 (  20.9M): điểm   53.8 | về đích  60% (TB  5.3 s) | đâm  40% | qua TB 5.7 cổng | nhiễu 0.22 |  0.96 h
+  lô   350 (  21.5M): điểm   56.0 | về đích  62% (TB  5.1 s) | đâm  38% | qua TB 5.9 cổng | nhiễu 0.21 |  0.98 h
+  [chấm 20 map thi] về đích 30%, đâm 75%, TB 5.38 s/vòng, nhanh nhất 5.05 s, tốc độ max 4.9 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô   360 (  22.1M): điểm   54.8 | về đích  62% (TB  5.2 s) | đâm  38% | qua TB 5.8 cổng | nhiễu 0.21 |  1.02 h
+  lô   370 (  22.7M): điểm   59.0 | về đích  67% (TB  5.2 s) | đâm  33% | qua TB 6.1 cổng | nhiễu 0.20 |  1.04 h
+  lô   380 (  23.3M): điểm   62.5 | về đích  71% (TB  5.3 s) | đâm  29% | qua TB 6.4 cổng | nhiễu 0.20 |  1.07 h
+  lô   390 (  24.0M): điểm   57.0 | về đích  64% (TB  5.2 s) | đâm  36% | qua TB 6.0 cổng | nhiễu 0.19 |  1.10 h
+  lô   400 (  24.6M): điểm   64.9 | về đích  74% (TB  5.1 s) | đâm  26% | qua TB 6.6 cổng | nhiễu 0.19 |  1.13 h
+  [chấm 20 map thi] về đích 40%, đâm 60%, TB 5.53 s/vòng, nhanh nhất 5.17 s, tốc độ max 5.7 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô   410 (  25.2M): điểm   65.5 | về đích  76% (TB  5.2 s) | đâm  24% | qua TB 6.6 cổng | nhiễu 0.19 |  1.16 h
+  lô   420 (  25.8M): điểm   65.5 | về đích  76% (TB  5.1 s) | đâm  24% | qua TB 6.6 cổng | nhiễu 0.19 |  1.19 h
+  lô   430 (  26.4M): điểm   64.9 | về đích  74% (TB  5.0 s) | đâm  26% | qua TB 6.5 cổng | nhiễu 0.18 |  1.23 h
+  lô   440 (  27.0M): điểm   65.1 | về đích  75% (TB  4.9 s) | đâm  24% | qua TB 6.6 cổng | nhiễu 0.18 |  1.25 h
+  lô   450 (  27.6M): điểm   63.0 | về đích  72% (TB  4.9 s) | đâm  28% | qua TB 6.4 cổng | nhiễu 0.18 |  1.28 h
+  [chấm 20 map thi] về đích 75%, đâm 30%, TB 4.98 s/vòng, nhanh nhất 4.64 s, tốc độ max 5.9 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô   460 (  28.3M): điểm   66.4 | về đích  75% (TB  4.9 s) | đâm  25% | qua TB 6.6 cổng | nhiễu 0.17 |  1.30 h
+  lô   470 (  28.9M): điểm   64.8 | về đích  74% (TB  4.9 s) | đâm  25% | qua TB 6.5 cổng | nhiễu 0.17 |  1.33 h
+  lô   480 (  29.5M): điểm   69.3 | về đích  79% (TB  5.0 s) | đâm  20% | qua TB 6.8 cổng | nhiễu 0.17 |  1.36 h
+  lô   490 (  30.1M): điểm   69.2 | về đích  79% (TB  4.8 s) | đâm  21% | qua TB 6.8 cổng | nhiễu 0.17 |  1.38 h
+  lô   500 (  30.7M): điểm   69.0 | về đích  78% (TB  4.8 s) | đâm  22% | qua TB 6.8 cổng | nhiễu 0.16 |  1.41 h
+  [chấm 20 map thi] về đích 65%, đâm 35%, TB 4.71 s/vòng, nhanh nhất 4.41 s, tốc độ max 5.5 m/s
+  lô   510 (  31.3M): điểm   67.9 | về đích  77% (TB  4.7 s) | đâm  23% | qua TB 6.7 cổng | nhiễu 0.16 |  1.43 h
+  lô   520 (  31.9M): điểm   69.2 | về đích  79% (TB  4.8 s) | đâm  20% | qua TB 6.8 cổng | nhiễu 0.16 |  1.46 h
+  lô   530 (  32.6M): điểm   70.7 | về đích  81% (TB  4.7 s) | đâm  19% | qua TB 6.9 cổng | nhiễu 0.15 |  1.49 h
+  lô   540 (  33.2M): điểm   72.4 | về đích  84% (TB  4.8 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.15 |  1.51 h
+  lô   550 (  33.8M): điểm   72.0 | về đích  82% (TB  4.8 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.15 |  1.54 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 4.72 s/vòng, nhanh nhất 4.33 s, tốc độ max 6.0 m/s
+  lô   560 (  34.4M): điểm   71.0 | về đích  82% (TB  4.8 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.15 |  1.57 h
+  lô   570 (  35.0M): điểm   71.6 | về đích  83% (TB  4.8 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.14 |  1.59 h
+  lô   580 (  35.6M): điểm   73.9 | về đích  85% (TB  4.7 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.14 |  1.62 h
+  lô   590 (  36.2M): điểm   71.5 | về đích  83% (TB  4.8 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.14 |  1.65 h
+  lô   600 (  36.9M): điểm   75.3 | về đích  87% (TB  4.8 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.14 |  1.68 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.75 s/vòng, nhanh nhất 4.11 s, tốc độ max 6.4 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô   610 (  37.5M): điểm   74.9 | về đích  87% (TB  4.8 s) | đâm  13% | qua TB 7.2 cổng | nhiễu 0.14 |  1.71 h
+  lô   620 (  38.1M): điểm   76.2 | về đích  88% (TB  4.8 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.13 |  1.73 h
+  lô   630 (  38.7M): điểm   73.0 | về đích  83% (TB  4.7 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.13 |  1.76 h
+  lô   640 (  39.3M): điểm   72.5 | về đích  84% (TB  4.7 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.13 |  1.79 h
+  lô   650 (  39.9M): điểm   73.0 | về đích  85% (TB  4.6 s) | đâm  15% | qua TB 7.1 cổng | nhiễu 0.13 |  1.81 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 4.63 s/vòng, nhanh nhất 4.30 s, tốc độ max 6.0 m/s
+  lô   660 (  40.6M): điểm   73.4 | về đích  85% (TB  4.6 s) | đâm  15% | qua TB 7.1 cổng | nhiễu 0.13 |  1.84 h
+  lô   670 (  41.2M): điểm   73.7 | về đích  86% (TB  4.6 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.12 |  1.87 h
+  lô   680 (  41.8M): điểm   73.3 | về đích  85% (TB  4.6 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.12 |  1.90 h
+  lô   690 (  42.4M): điểm   72.4 | về đích  84% (TB  4.5 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.12 |  1.93 h
+  lô   700 (  43.0M): điểm   74.6 | về đích  85% (TB  4.6 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.12 |  1.96 h
+  [chấm 20 map thi] về đích 65%, đâm 30%, TB 4.63 s/vòng, nhanh nhất 4.31 s, tốc độ max 6.3 m/s
+  lô   710 (  43.6M): điểm   71.2 | về đích  82% (TB  4.6 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.12 |  1.98 h
+  lô   720 (  44.2M): điểm   76.9 | về đích  90% (TB  4.6 s) | đâm  10% | qua TB 7.4 cổng | nhiễu 0.12 |  2.01 h
+  lô   730 (  44.9M): điểm   75.9 | về đích  87% (TB  4.5 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.11 |  2.04 h
+  lô   740 (  45.5M): điểm   74.4 | về đích  85% (TB  4.4 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.11 |  2.07 h
+  lô   750 (  46.1M): điểm   75.2 | về đích  87% (TB  4.5 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.11 |  2.10 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.44 s/vòng, nhanh nhất 4.20 s, tốc độ max 6.4 m/s
+  lô   760 (  46.7M): điểm   74.0 | về đích  86% (TB  4.4 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.11 |  2.13 h
+  lô   770 (  47.3M): điểm   74.7 | về đích  87% (TB  4.4 s) | đâm  13% | qua TB 7.2 cổng | nhiễu 0.11 |  2.15 h
+  lô   780 (  47.9M): điểm   75.4 | về đích  87% (TB  4.4 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.10 |  2.18 h
+  lô   790 (  48.5M): điểm   73.8 | về đích  85% (TB  4.4 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.10 |  2.21 h
+  lô   800 (  49.2M): điểm   74.1 | về đích  86% (TB  4.4 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.10 |  2.24 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.39 s/vòng, nhanh nhất 4.05 s, tốc độ max 6.6 m/s
+  lô   810 (  49.8M): điểm   74.9 | về đích  87% (TB  4.4 s) | đâm  12% | qua TB 7.2 cổng | nhiễu 0.10 |  2.27 h
+  lô   820 (  50.4M): điểm   75.1 | về đích  87% (TB  4.4 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.10 |  2.29 h
+  lô   830 (  51.0M): điểm   75.4 | về đích  87% (TB  4.4 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.10 |  2.32 h
+  lô   840 (  51.6M): điểm   74.1 | về đích  84% (TB  4.4 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.10 |  2.35 h
+  lô   850 (  52.2M): điểm   73.2 | về đích  84% (TB  4.3 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.09 |  2.37 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.29 s/vòng, nhanh nhất 3.98 s, tốc độ max 6.9 m/s
+  lô   860 (  52.8M): điểm   71.7 | về đích  82% (TB  4.4 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.09 |  2.40 h
+  lô   870 (  53.5M): điểm   71.0 | về đích  83% (TB  4.4 s) | đâm  17% | qua TB 6.9 cổng | nhiễu 0.09 |  2.43 h
+  lô   880 (  54.1M): điểm   73.7 | về đích  85% (TB  4.3 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.09 |  2.46 h
+  lô   890 (  54.7M): điểm   72.7 | về đích  83% (TB  4.3 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.09 |  2.48 h
+  lô   900 (  55.3M): điểm   73.2 | về đích  84% (TB  4.3 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.09 |  2.51 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.29 s/vòng, nhanh nhất 4.04 s, tốc độ max 6.8 m/s
+  lô   910 (  55.9M): điểm   76.1 | về đích  88% (TB  4.3 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.09 |  2.54 h
+  lô   920 (  56.5M): điểm   74.4 | về đích  86% (TB  4.3 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.09 |  2.57 h
+  lô   930 (  57.1M): điểm   73.8 | về đích  85% (TB  4.3 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.09 |  2.59 h
+  lô   940 (  57.8M): điểm   74.0 | về đích  85% (TB  4.3 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.09 |  2.62 h
+  lô   950 (  58.4M): điểm   72.3 | về đích  83% (TB  4.3 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.08 |  2.66 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.42 s/vòng, nhanh nhất 3.91 s, tốc độ max 6.5 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô   960 (  59.0M): điểm   74.3 | về đích  85% (TB  4.3 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.08 |  2.71 h
+  lô   970 (  59.6M): điểm   75.2 | về đích  86% (TB  4.3 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.08 |  2.74 h
+  lô   980 (  60.2M): điểm   75.1 | về đích  86% (TB  4.3 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.08 |  2.77 h
+  lô   990 (  60.8M): điểm   71.6 | về đích  81% (TB  4.3 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.08 |  2.80 h
+  lô  1000 (  61.4M): điểm   74.6 | về đích  85% (TB  4.3 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.08 |  2.83 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.31 s/vòng, nhanh nhất 3.89 s, tốc độ max 7.1 m/s
+  lô  1010 (  62.1M): điểm   72.8 | về đích  84% (TB  4.3 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.08 |  2.86 h
+  lô  1020 (  62.7M): điểm   72.8 | về đích  84% (TB  4.3 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.08 |  2.89 h
+  lô  1030 (  63.3M): điểm   74.5 | về đích  85% (TB  4.3 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.08 |  2.92 h
+  lô  1040 (  63.9M): điểm   75.7 | về đích  87% (TB  4.3 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.08 |  2.95 h
+  lô  1050 (  64.5M): điểm   75.7 | về đích  87% (TB  4.3 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.08 |  2.98 h
+  [chấm 20 map thi] về đích 85%, đâm 15%, TB 4.21 s/vòng, nhanh nhất 4.02 s, tốc độ max 6.9 m/s
+  lô  1060 (  65.1M): điểm   76.1 | về đích  88% (TB  4.3 s) | đâm  12% | qua TB 7.3 cổng | nhiễu 0.07 |  3.01 h
+  lô  1070 (  65.7M): điểm   73.7 | về đích  85% (TB  4.3 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.07 |  3.04 h
+  lô  1080 (  66.4M): điểm   75.1 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.07 |  3.07 h
+  lô  1090 (  67.0M): điểm   74.4 | về đích  85% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.07 |  3.10 h
+  lô  1100 (  67.6M): điểm   76.5 | về đích  88% (TB  4.3 s) | đâm  12% | qua TB 7.3 cổng | nhiễu 0.07 |  3.13 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.33 s/vòng, nhanh nhất 3.85 s, tốc độ max 6.7 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô  1110 (  68.2M): điểm   76.8 | về đích  88% (TB  4.3 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.07 |  3.16 h
+  lô  1120 (  68.8M): điểm   77.0 | về đích  89% (TB  4.3 s) | đâm  11% | qua TB 7.4 cổng | nhiễu 0.07 |  3.19 h
+  lô  1130 (  69.4M): điểm   74.9 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.07 |  3.23 h
+  lô  1140 (  70.0M): điểm   75.6 | về đích  86% (TB  4.3 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.07 |  3.25 h
+  lô  1150 (  70.7M): điểm   77.0 | về đích  88% (TB  4.3 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.07 |  3.29 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.25 s/vòng, nhanh nhất 3.99 s, tốc độ max 6.7 m/s
+  lô  1160 (  71.3M): điểm   77.9 | về đích  89% (TB  4.3 s) | đâm  11% | qua TB 7.5 cổng | nhiễu 0.07 |  3.33 h
+  lô  1170 (  71.9M): điểm   76.7 | về đích  88% (TB  4.3 s) | đâm  11% | qua TB 7.4 cổng | nhiễu 0.07 |  3.35 h
+  lô  1180 (  72.5M): điểm   76.1 | về đích  87% (TB  4.3 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.07 |  3.38 h
+  lô  1190 (  73.1M): điểm   76.7 | về đích  88% (TB  4.3 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.07 |  3.41 h
+  lô  1200 (  73.7M): điểm   75.2 | về đích  87% (TB  4.3 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.06 |  3.44 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 4.21 s/vòng, nhanh nhất 3.93 s, tốc độ max 7.1 m/s
+  lô  1210 (  74.3M): điểm   76.7 | về đích  88% (TB  4.3 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.06 |  3.49 h
+  !! lỗi lần 1 lúc 21:49, chạy lại sau 30 s
+  !! lỗi lần 2 lúc 21:50, chạy lại sau 30 s
+  !! lỗi lần 3 lúc 22:20, chạy lại sau 30 s
+  !! lỗi lần 4 lúc 22:20, chạy lại sau 30 s
+  !! lỗi lần 5 lúc 22:25, chạy lại sau 30 s
+  !! lỗi lần 6 lúc 22:26, chạy lại sau 30 s
+  !! lỗi lần 7 lúc 22:27, chạy lại sau 30 s
+  !! lỗi lần 8 lúc 22:28, chạy lại sau 30 s
+  !! lỗi lần 9 lúc 22:28, chạy lại sau 30 s
+  !! lỗi lần 10 lúc 22:29, chạy lại sau 30 s
+Train tiếp từ /home/duong-12a/RL/drone_5inch/checkpoints/race_last.pt, lô 1200
+ĐUA QUA CỔNG chỉ bằng cảm biến: 240 drone / 10 nhân CPU, lô 61440 bước, 4882 lô (300M bước), học trên cuda
+  lô  1210 (  74.3M): điểm   74.7 | về đích  86% (TB  4.3 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.06 |  0.03 h
+  lô  1220 (  75.0M): điểm   77.4 | về đích  89% (TB  4.3 s) | đâm  11% | qua TB 7.4 cổng | nhiễu 0.06 |  0.05 h
+  lô  1230 (  75.6M): điểm   76.1 | về đích  88% (TB  4.2 s) | đâm  12% | qua TB 7.3 cổng | nhiễu 0.06 |  0.08 h
+  lô  1240 (  76.2M): điểm   74.8 | về đích  86% (TB  4.3 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.06 |  0.10 h
+  lô  1250 (  76.8M): điểm   76.2 | về đích  88% (TB  4.2 s) | đâm  12% | qua TB 7.3 cổng | nhiễu 0.06 |  0.12 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 4.25 s/vòng, nhanh nhất 3.93 s, tốc độ max 7.3 m/s
+  lô  1260 (  77.4M): điểm   75.3 | về đích  86% (TB  4.3 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.06 |  0.15 h
+  lô  1270 (  78.0M): điểm   75.5 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.2 cổng | nhiễu 0.06 |  0.18 h
+  lô  1280 (  78.6M): điểm   73.5 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.06 |  0.20 h
+  lô  1290 (  79.3M): điểm   76.7 | về đích  88% (TB  4.2 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.06 |  0.23 h
+  lô  1300 (  79.9M): điểm   76.5 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.4 cổng | nhiễu 0.06 |  0.25 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 4.37 s/vòng, nhanh nhất 3.96 s, tốc độ max 6.8 m/s
+  lô  1310 (  80.5M): điểm   76.4 | về đích  88% (TB  4.2 s) | đâm  12% | qua TB 7.3 cổng | nhiễu 0.06 |  0.28 h
+  lô  1320 (  81.1M): điểm   75.3 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.06 |  0.30 h
+  lô  1330 (  81.7M): điểm   76.1 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.06 |  0.33 h
+  lô  1340 (  82.3M): điểm   74.0 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.06 |  0.35 h
+  lô  1350 (  82.9M): điểm   73.5 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.06 |  0.38 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.09 s/vòng, nhanh nhất 3.60 s, tốc độ max 7.1 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô  1360 (  83.6M): điểm   75.1 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.06 |  0.40 h
+  lô  1370 (  84.2M): điểm   76.0 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.06 |  0.43 h
+  lô  1380 (  84.8M): điểm   73.2 | về đích  84% (TB  4.2 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.06 |  0.45 h
+  lô  1390 (  85.4M): điểm   74.3 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.05 |  0.48 h
+  lô  1400 (  86.0M): điểm   74.5 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.05 |  0.50 h
+  [chấm 20 map thi] về đích 85%, đâm 15%, TB 4.18 s/vòng, nhanh nhất 3.91 s, tốc độ max 7.2 m/s
+  lô  1410 (  86.6M): điểm   73.3 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.05 |  0.53 h
+  lô  1420 (  87.2M): điểm   75.6 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.05 |  0.56 h
+  lô  1430 (  87.9M): điểm   74.2 | về đích  85% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.05 |  0.58 h
+  lô  1440 (  88.5M): điểm   73.9 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.05 |  0.61 h
+  lô  1450 (  89.1M): điểm   72.7 | về đích  82% (TB  4.2 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.05 |  0.63 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.10 s/vòng, nhanh nhất 3.82 s, tốc độ max 7.0 m/s
+  lô  1460 (  89.7M): điểm   72.5 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.05 |  0.66 h
+  lô  1470 (  90.3M): điểm   72.2 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.05 |  0.68 h
+  lô  1480 (  90.9M): điểm   72.0 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.05 |  0.71 h
+  lô  1490 (  91.5M): điểm   75.8 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.05 |  0.73 h
+  lô  1500 (  92.2M): điểm   72.1 | về đích  82% (TB  4.2 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.05 |  0.76 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.21 s/vòng, nhanh nhất 3.91 s, tốc độ max 8.0 m/s
+  lô  1510 (  92.8M): điểm   72.0 | về đích  82% (TB  4.3 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.05 |  0.78 h
+  lô  1520 (  93.4M): điểm   72.7 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.05 |  0.81 h
+  lô  1530 (  94.0M): điểm   73.1 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.05 |  0.83 h
+  lô  1540 (  94.6M): điểm   73.7 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.1 cổng | nhiễu 0.05 |  0.86 h
+  lô  1550 (  95.2M): điểm   73.4 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.05 |  0.88 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.24 s/vòng, nhanh nhất 3.92 s, tốc độ max 8.0 m/s
+  lô  1560 (  95.8M): điểm   73.0 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.05 |  0.91 h
+  lô  1570 (  96.5M): điểm   72.8 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.05 |  0.93 h
+  lô  1580 (  97.1M): điểm   76.3 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.05 |  0.96 h
+  lô  1590 (  97.7M): điểm   75.2 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.05 |  0.98 h
+  lô  1600 (  98.3M): điểm   76.9 | về đích  89% (TB  4.2 s) | đâm  11% | qua TB 7.4 cổng | nhiễu 0.05 |  1.01 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.21 s/vòng, nhanh nhất 3.89 s, tốc độ max 6.7 m/s
+  lô  1610 (  98.9M): điểm   75.6 | về đích  87% (TB  4.2 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.04 |  1.04 h
+  lô  1620 (  99.5M): điểm   75.3 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.04 |  1.06 h
+  lô  1630 ( 100.1M): điểm   75.9 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.04 |  1.09 h
+  lô  1640 ( 100.8M): điểm   73.5 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.1 cổng | nhiễu 0.04 |  1.11 h
+  lô  1650 ( 101.4M): điểm   74.7 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.13 h
+  [chấm 20 map thi] về đích 95%, đâm 5%, TB 4.19 s/vòng, nhanh nhất 3.87 s, tốc độ max 6.9 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô  1660 ( 102.0M): điểm   74.0 | về đích  85% (TB  4.2 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.04 |  1.16 h
+  lô  1670 ( 102.6M): điểm   74.6 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.04 |  1.19 h
+  lô  1680 ( 103.2M): điểm   74.6 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.21 h
+  lô  1690 ( 103.8M): điểm   75.2 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.04 |  1.24 h
+  lô  1700 ( 104.4M): điểm   74.0 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.26 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.40 s/vòng, nhanh nhất 3.86 s, tốc độ max 7.1 m/s
+  lô  1710 ( 105.1M): điểm   74.0 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.04 |  1.29 h
+  lô  1720 ( 105.7M): điểm   72.0 | về đích  82% (TB  4.2 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.04 |  1.31 h
+  lô  1730 ( 106.3M): điểm   73.6 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.04 |  1.34 h
+  lô  1740 ( 106.9M): điểm   74.5 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.36 h
+  lô  1750 ( 107.5M): điểm   72.0 | về đích  82% (TB  4.1 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.04 |  1.39 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.06 s/vòng, nhanh nhất 3.61 s, tốc độ max 7.2 m/s
+  lô  1760 ( 108.1M): điểm   71.8 | về đích  81% (TB  4.1 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.04 |  1.41 h
+  lô  1770 ( 108.7M): điểm   72.4 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.0 cổng | nhiễu 0.04 |  1.44 h
+  lô  1780 ( 109.4M): điểm   74.9 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.04 |  1.46 h
+  lô  1790 ( 110.0M): điểm   73.8 | về đích  84% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.49 h
+  lô  1800 ( 110.6M): điểm   73.8 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.51 h
+  [chấm 20 map thi] về đích 65%, đâm 35%, TB 4.17 s/vòng, nhanh nhất 3.79 s, tốc độ max 6.8 m/s
+  lô  1810 ( 111.2M): điểm   73.2 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.1 cổng | nhiễu 0.04 |  1.54 h
+  lô  1820 ( 111.8M): điểm   72.6 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.04 |  1.56 h
+  lô  1830 ( 112.4M): điểm   73.5 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.04 |  1.59 h
+  lô  1840 ( 113.0M): điểm   74.0 | về đích  85% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.04 |  1.61 h
+  lô  1850 ( 113.7M): điểm   74.4 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.04 |  1.64 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.29 s/vòng, nhanh nhất 3.92 s, tốc độ max 6.9 m/s
+  lô  1860 ( 114.3M): điểm   76.7 | về đích  88% (TB  4.2 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.04 |  1.67 h
+  lô  1870 ( 114.9M): điểm   73.7 | về đích  83% (TB  4.2 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.04 |  1.69 h
+  lô  1880 ( 115.5M): điểm   74.3 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.71 h
+  lô  1890 ( 116.1M): điểm   73.1 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.04 |  1.74 h
+  lô  1900 ( 116.7M): điểm   70.7 | về đích  81% (TB  4.2 s) | đâm  19% | qua TB 6.9 cổng | nhiễu 0.04 |  1.76 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 4.19 s/vòng, nhanh nhất 3.85 s, tốc độ max 6.7 m/s
+  lô  1910 ( 117.4M): điểm   71.4 | về đích  82% (TB  4.1 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.04 |  1.79 h
+  lô  1920 ( 118.0M): điểm   73.8 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.04 |  1.82 h
+  lô  1930 ( 118.6M): điểm   73.0 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.04 |  1.84 h
+  lô  1940 ( 119.2M): điểm   75.7 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.04 |  1.87 h
+  lô  1950 ( 119.8M): điểm   73.4 | về đích  83% (TB  4.1 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.04 |  1.89 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.14 s/vòng, nhanh nhất 3.63 s, tốc độ max 7.0 m/s
+  lô  1960 ( 120.4M): điểm   76.3 | về đích  87% (TB  4.1 s) | đâm  13% | qua TB 7.4 cổng | nhiễu 0.04 |  1.92 h
+  lô  1970 ( 121.0M): điểm   73.8 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.04 |  1.94 h
+  lô  1980 ( 121.7M): điểm   74.6 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.04 |  1.97 h
+  lô  1990 ( 122.3M): điểm   73.1 | về đích  84% (TB  4.1 s) | đâm  15% | qua TB 7.1 cổng | nhiễu 0.04 |  1.99 h
+  lô  2000 ( 122.9M): điểm   76.4 | về đích  88% (TB  4.1 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.04 |  2.02 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.14 s/vòng, nhanh nhất 3.83 s, tốc độ max 6.9 m/s
+  lô  2010 ( 123.5M): điểm   74.2 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.04 |  2.04 h
+  lô  2020 ( 124.1M): điểm   76.0 | về đích  87% (TB  4.1 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.04 |  2.07 h
+  lô  2030 ( 124.7M): điểm   73.9 | về đích  85% (TB  4.1 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.04 |  2.09 h
+  lô  2040 ( 125.3M): điểm   73.5 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  2.12 h
+  lô  2050 ( 126.0M): điểm   72.7 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  2.14 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.21 s/vòng, nhanh nhất 3.91 s, tốc độ max 6.8 m/s
+  lô  2060 ( 126.6M): điểm   76.5 | về đích  88% (TB  4.1 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.03 |  2.17 h
+  lô  2070 ( 127.2M): điểm   74.4 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  2.19 h
+  lô  2080 ( 127.8M): điểm   75.3 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.03 |  2.22 h
+  lô  2090 ( 128.4M): điểm   72.9 | về đích  83% (TB  4.2 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  2.24 h
+  lô  2100 ( 129.0M): điểm   73.9 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  2.27 h
+  [chấm 20 map thi] về đích 85%, đâm 15%, TB 4.22 s/vòng, nhanh nhất 3.79 s, tốc độ max 6.9 m/s
+  lô  2110 ( 129.6M): điểm   76.8 | về đích  88% (TB  4.1 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.03 |  2.29 h
+  lô  2120 ( 130.3M): điểm   75.5 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.03 |  2.32 h
+  lô  2130 ( 130.9M): điểm   75.0 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  2.34 h
+  lô  2140 ( 131.5M): điểm   73.5 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.03 |  2.37 h
+  lô  2150 ( 132.1M): điểm   73.2 | về đích  83% (TB  4.1 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  2.39 h
+  [chấm 20 map thi] về đích 95%, đâm 5%, TB 4.16 s/vòng, nhanh nhất 3.84 s, tốc độ max 7.0 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô  2160 ( 132.7M): điểm   72.2 | về đích  82% (TB  4.1 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.03 |  2.42 h
+  lô  2170 ( 133.3M): điểm   74.2 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.03 |  2.45 h
+  lô  2180 ( 133.9M): điểm   74.4 | về đích  85% (TB  4.2 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  2.47 h
+  lô  2190 ( 134.6M): điểm   74.6 | về đích  87% (TB  4.2 s) | đâm  13% | qua TB 7.2 cổng | nhiễu 0.03 |  2.50 h
+  lô  2200 ( 135.2M): điểm   75.0 | về đích  86% (TB  4.2 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  2.52 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.32 s/vòng, nhanh nhất 3.81 s, tốc độ max 7.3 m/s
+  lô  2210 ( 135.8M): điểm   74.7 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  2.55 h
+  lô  2220 ( 136.4M): điểm   74.2 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  2.57 h
+  lô  2230 ( 137.0M): điểm   75.3 | về đích  87% (TB  4.1 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.03 |  2.60 h
+  lô  2240 ( 137.6M): điểm   74.0 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  2.62 h
+  lô  2250 ( 138.2M): điểm   72.3 | về đích  83% (TB  4.1 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  2.65 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.09 s/vòng, nhanh nhất 3.77 s, tốc độ max 7.2 m/s
+  lô  2260 ( 138.9M): điểm   73.9 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  2.67 h
+  lô  2270 ( 139.5M): điểm   72.8 | về đích  83% (TB  4.1 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  2.70 h
+  lô  2280 ( 140.1M): điểm   72.6 | về đích  83% (TB  4.1 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  2.72 h
+  lô  2290 ( 140.7M): điểm   71.8 | về đích  81% (TB  4.1 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.03 |  2.75 h
+  lô  2300 ( 141.3M): điểm   72.4 | về đích  83% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  2.77 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.08 s/vòng, nhanh nhất 3.74 s, tốc độ max 7.2 m/s
+  lô  2310 ( 141.9M): điểm   72.0 | về đích  82% (TB  4.1 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.03 |  2.80 h
+  lô  2320 ( 142.5M): điểm   74.8 | về đích  87% (TB  4.1 s) | đâm  13% | qua TB 7.3 cổng | nhiễu 0.03 |  2.82 h
+  lô  2330 ( 143.2M): điểm   71.0 | về đích  82% (TB  4.1 s) | đâm  18% | qua TB 6.9 cổng | nhiễu 0.03 |  2.85 h
+  lô  2340 ( 143.8M): điểm   74.6 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  2.87 h
+  lô  2350 ( 144.4M): điểm   76.0 | về đích  87% (TB  4.1 s) | đâm  13% | qua TB 7.4 cổng | nhiễu 0.03 |  2.90 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.16 s/vòng, nhanh nhất 3.82 s, tốc độ max 7.5 m/s
+  lô  2360 ( 145.0M): điểm   72.3 | về đích  82% (TB  4.1 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  2.92 h
+  lô  2370 ( 145.6M): điểm   72.9 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  2.95 h
+  lô  2380 ( 146.2M): điểm   71.0 | về đích  81% (TB  4.1 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.03 |  2.97 h
+  lô  2390 ( 146.8M): điểm   74.4 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  3.00 h
+  lô  2400 ( 147.5M): điểm   73.2 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  3.02 h
+  [chấm 20 map thi] về đích 95%, đâm 5%, TB 4.11 s/vòng, nhanh nhất 3.67 s, tốc độ max 7.3 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô  2410 ( 148.1M): điểm   74.4 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  3.05 h
+  lô  2420 ( 148.7M): điểm   72.1 | về đích  82% (TB  4.0 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.03 |  3.07 h
+  lô  2430 ( 149.3M): điểm   73.0 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  3.10 h
+  lô  2440 ( 149.9M): điểm   74.2 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  3.12 h
+  lô  2450 ( 150.5M): điểm   74.7 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  3.15 h
+  [chấm 20 map thi] về đích 85%, đâm 15%, TB 4.07 s/vòng, nhanh nhất 3.83 s, tốc độ max 7.1 m/s
+  lô  2460 ( 151.1M): điểm   73.9 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.03 |  3.18 h
+  lô  2470 ( 151.8M): điểm   75.0 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.3 cổng | nhiễu 0.03 |  3.20 h
+  lô  2480 ( 152.4M): điểm   75.0 | về đích  86% (TB  4.0 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  3.23 h
+  lô  2490 ( 153.0M): điểm   73.8 | về đích  85% (TB  4.0 s) | đâm  15% | qua TB 7.1 cổng | nhiễu 0.03 |  3.25 h
+  lô  2500 ( 153.6M): điểm   73.1 | về đích  83% (TB  4.0 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  3.27 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.07 s/vòng, nhanh nhất 3.64 s, tốc độ max 7.1 m/s
+  lô  2510 ( 154.2M): điểm   74.4 | về đích  86% (TB  4.0 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  3.30 h
+  lô  2520 ( 154.8M): điểm   74.8 | về đích  85% (TB  4.1 s) | đâm  15% | qua TB 7.3 cổng | nhiễu 0.03 |  3.33 h
+  lô  2530 ( 155.4M): điểm   76.6 | về đích  88% (TB  4.0 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.03 |  3.35 h
+  lô  2540 ( 156.1M): điểm   73.8 | về đích  84% (TB  4.1 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.03 |  3.38 h
+  lô  2550 ( 156.7M): điểm   72.4 | về đích  83% (TB  4.1 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  3.40 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.11 s/vòng, nhanh nhất 3.71 s, tốc độ max 7.1 m/s
+  lô  2560 ( 157.3M): điểm   75.0 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.03 |  3.43 h
+  lô  2570 ( 157.9M): điểm   75.1 | về đích  86% (TB  4.1 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.03 |  3.45 h
+  lô  2580 ( 158.5M): điểm   72.6 | về đích  84% (TB  4.2 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  3.48 h
+  lô  2590 ( 159.1M): điểm   74.9 | về đích  86% (TB  4.0 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.03 |  3.50 h
+  lô  2600 ( 159.7M): điểm   76.9 | về đích  88% (TB  4.1 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.03 |  3.53 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 4.05 s/vòng, nhanh nhất 3.83 s, tốc độ max 7.1 m/s
+  lô  2610 ( 160.4M): điểm   71.2 | về đích  81% (TB  4.1 s) | đâm  19% | qua TB 6.9 cổng | nhiễu 0.03 |  3.55 h
+  lô  2620 ( 161.0M): điểm   73.5 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.03 |  3.58 h
+  lô  2630 ( 161.6M): điểm   72.7 | về đích  82% (TB  4.0 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  3.60 h
+  lô  2640 ( 162.2M): điểm   75.9 | về đích  87% (TB  4.1 s) | đâm  13% | qua TB 7.4 cổng | nhiễu 0.03 |  3.63 h
+  lô  2650 ( 162.8M): điểm   76.7 | về đích  88% (TB  4.0 s) | đâm  12% | qua TB 7.4 cổng | nhiễu 0.03 |  3.65 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 3.98 s/vòng, nhanh nhất 3.71 s, tốc độ max 7.4 m/s
+  lô  2660 ( 163.4M): điểm   71.1 | về đích  81% (TB  4.0 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.03 |  3.68 h
+  lô  2670 ( 164.0M): điểm   74.0 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.03 |  3.70 h
+  lô  2680 ( 164.7M): điểm   73.3 | về đích  83% (TB  4.0 s) | đâm  17% | qua TB 7.2 cổng | nhiễu 0.03 |  3.73 h
+  lô  2690 ( 165.3M): điểm   72.7 | về đích  83% (TB  4.0 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  3.75 h
+  lô  2700 ( 165.9M): điểm   74.2 | về đích  85% (TB  4.0 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  3.78 h
+  [chấm 20 map thi] về đích 85%, đâm 15%, TB 4.00 s/vòng, nhanh nhất 3.61 s, tốc độ max 7.2 m/s
+  lô  2710 ( 166.5M): điểm   73.0 | về đích  82% (TB  4.0 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.03 |  3.80 h
+  lô  2720 ( 167.1M): điểm   72.3 | về đích  82% (TB  4.1 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.03 |  3.83 h
+  lô  2730 ( 167.7M): điểm   74.2 | về đích  85% (TB  4.0 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  3.85 h
+  lô  2740 ( 168.3M): điểm   73.2 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.03 |  3.88 h
+  lô  2750 ( 169.0M): điểm   75.1 | về đích  86% (TB  4.0 s) | đâm  14% | qua TB 7.3 cổng | nhiễu 0.03 |  3.90 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.11 s/vòng, nhanh nhất 3.67 s, tốc độ max 7.9 m/s
+  lô  2760 ( 169.6M): điểm   74.1 | về đích  85% (TB  4.0 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.03 |  3.93 h
+  lô  2770 ( 170.2M): điểm   74.5 | về đích  84% (TB  4.0 s) | đâm  15% | qua TB 7.3 cổng | nhiễu 0.03 |  3.96 h
+  lô  2780 ( 170.8M): điểm   74.7 | về đích  86% (TB  4.0 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.03 |  3.98 h
+  lô  2790 ( 171.4M): điểm   70.7 | về đích  80% (TB  4.0 s) | đâm  20% | qua TB 6.9 cổng | nhiễu 0.03 |  4.00 h
+  lô  2800 ( 172.0M): điểm   74.2 | về đích  84% (TB  4.0 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.02 |  4.03 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.16 s/vòng, nhanh nhất 3.58 s, tốc độ max 7.7 m/s
+  lô  2810 ( 172.6M): điểm   71.6 | về đích  82% (TB  4.0 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.02 |  4.06 h
+  lô  2820 ( 173.3M): điểm   69.7 | về đích  79% (TB  4.0 s) | đâm  21% | qua TB 6.9 cổng | nhiễu 0.02 |  4.08 h
+  lô  2830 ( 173.9M): điểm   73.8 | về đích  85% (TB  4.0 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.02 |  4.11 h
+  lô  2840 ( 174.5M): điểm   71.8 | về đích  80% (TB  4.0 s) | đâm  20% | qua TB 7.0 cổng | nhiễu 0.02 |  4.13 h
+  lô  2850 ( 175.1M): điểm   72.6 | về đích  83% (TB  4.0 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.02 |  4.16 h
+  [chấm 20 map thi] về đích 60%, đâm 40%, TB 3.99 s/vòng, nhanh nhất 3.71 s, tốc độ max 6.7 m/s
+  lô  2860 ( 175.7M): điểm   73.8 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.02 |  4.18 h
+  lô  2870 ( 176.3M): điểm   70.9 | về đích  81% (TB  4.0 s) | đâm  19% | qua TB 6.9 cổng | nhiễu 0.02 |  4.21 h
+  lô  2880 ( 176.9M): điểm   73.6 | về đích  84% (TB  3.9 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.02 |  4.23 h
+  lô  2890 ( 177.6M): điểm   70.9 | về đích  81% (TB  4.0 s) | đâm  19% | qua TB 6.9 cổng | nhiễu 0.02 |  4.26 h
+  lô  2900 ( 178.2M): điểm   72.3 | về đích  82% (TB  4.0 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.02 |  4.28 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 4.10 s/vòng, nhanh nhất 3.57 s, tốc độ max 7.3 m/s
+  lô  2910 ( 178.8M): điểm   74.4 | về đích  85% (TB  4.0 s) | đâm  15% | qua TB 7.2 cổng | nhiễu 0.02 |  4.31 h
+  lô  2920 ( 179.4M): điểm   74.1 | về đích  86% (TB  4.0 s) | đâm  14% | qua TB 7.2 cổng | nhiễu 0.02 |  4.33 h
+  lô  2930 ( 180.0M): điểm   73.8 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.02 |  4.36 h
+  lô  2940 ( 180.6M): điểm   73.5 | về đích  84% (TB  4.0 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.02 |  4.38 h
+  lô  2950 ( 181.2M): điểm   72.3 | về đích  83% (TB  3.9 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.02 |  4.41 h
+  [chấm 20 map thi] về đích 65%, đâm 35%, TB 3.93 s/vòng, nhanh nhất 3.74 s, tốc độ max 7.2 m/s
+  lô  2960 ( 181.9M): điểm   71.9 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.02 |  4.43 h
+  lô  2970 ( 182.5M): điểm   70.9 | về đích  80% (TB  3.9 s) | đâm  20% | qua TB 7.0 cổng | nhiễu 0.02 |  4.46 h
+  lô  2980 ( 183.1M): điểm   73.4 | về đích  84% (TB  3.9 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.02 |  4.48 h
+  lô  2990 ( 183.7M): điểm   71.8 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  4.51 h
+  lô  3000 ( 184.3M): điểm   72.0 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.1 cổng | nhiễu 0.02 |  4.53 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 4.03 s/vòng, nhanh nhất 3.65 s, tốc độ max 6.6 m/s
+  lô  3010 ( 184.9M): điểm   72.6 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.02 |  4.56 h
+  lô  3020 ( 185.5M): điểm   73.6 | về đích  84% (TB  3.9 s) | đâm  16% | qua TB 7.2 cổng | nhiễu 0.02 |  4.58 h
+  lô  3030 ( 186.2M): điểm   69.5 | về đích  79% (TB  3.9 s) | đâm  21% | qua TB 6.8 cổng | nhiễu 0.02 |  4.61 h
+  lô  3040 ( 186.8M): điểm   70.0 | về đích  80% (TB  3.9 s) | đâm  21% | qua TB 6.9 cổng | nhiễu 0.02 |  4.63 h
+  lô  3050 ( 187.4M): điểm   71.5 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  4.66 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 3.91 s/vòng, nhanh nhất 3.51 s, tốc độ max 7.7 m/s
+  lô  3060 ( 188.0M): điểm   70.3 | về đích  79% (TB  3.9 s) | đâm  21% | qua TB 6.9 cổng | nhiễu 0.02 |  4.68 h
+  lô  3070 ( 188.6M): điểm   72.4 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.02 |  4.71 h
+  lô  3080 ( 189.2M): điểm   68.9 | về đích  77% (TB  3.9 s) | đâm  23% | qua TB 6.8 cổng | nhiễu 0.02 |  4.73 h
+  lô  3090 ( 189.8M): điểm   70.4 | về đích  79% (TB  3.9 s) | đâm  21% | qua TB 6.9 cổng | nhiễu 0.02 |  4.76 h
+  lô  3100 ( 190.5M): điểm   71.7 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  4.78 h
+  [chấm 20 map thi] về đích 75%, đâm 25%, TB 3.95 s/vòng, nhanh nhất 3.51 s, tốc độ max 7.3 m/s
+  lô  3110 ( 191.1M): điểm   71.1 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  4.81 h
+  lô  3120 ( 191.7M): điểm   69.1 | về đích  77% (TB  3.9 s) | đâm  23% | qua TB 6.8 cổng | nhiễu 0.02 |  4.83 h
+  lô  3130 ( 192.3M): điểm   71.6 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  4.86 h
+  lô  3140 ( 192.9M): điểm   70.0 | về đích  78% (TB  3.9 s) | đâm  22% | qua TB 6.9 cổng | nhiễu 0.02 |  4.88 h
+  lô  3150 ( 193.5M): điểm   70.9 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  4.91 h
+  [chấm 20 map thi] về đích 60%, đâm 40%, TB 3.86 s/vòng, nhanh nhất 3.43 s, tốc độ max 9.3 m/s
+  lô  3160 ( 194.2M): điểm   73.0 | về đích  83% (TB  3.9 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.02 |  4.93 h
+  lô  3170 ( 194.8M): điểm   69.8 | về đích  79% (TB  3.9 s) | đâm  21% | qua TB 6.9 cổng | nhiễu 0.02 |  4.96 h
+  lô  3180 ( 195.4M): điểm   73.3 | về đích  84% (TB  3.8 s) | đâm  16% | qua TB 7.1 cổng | nhiễu 0.02 |  4.98 h
+  lô  3190 ( 196.0M): điểm   72.7 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.02 |  5.01 h
+  lô  3200 ( 196.6M): điểm   72.4 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.02 |  5.03 h
+  [chấm 20 map thi] về đích 90%, đâm 10%, TB 3.78 s/vòng, nhanh nhất 3.42 s, tốc độ max 7.2 m/s
+  lô  3210 ( 197.2M): điểm   68.9 | về đích  77% (TB  3.9 s) | đâm  23% | qua TB 6.8 cổng | nhiễu 0.02 |  5.06 h
+  lô  3220 ( 197.8M): điểm   71.5 | về đích  81% (TB  3.8 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  5.08 h
+  lô  3230 ( 198.5M): điểm   69.1 | về đích  77% (TB  3.8 s) | đâm  23% | qua TB 6.9 cổng | nhiễu 0.02 |  5.11 h
+  lô  3240 ( 199.1M): điểm   69.9 | về đích  78% (TB  3.8 s) | đâm  22% | qua TB 6.9 cổng | nhiễu 0.02 |  5.13 h
+  lô  3250 ( 199.7M): điểm   72.3 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.02 |  5.16 h
+  [chấm 20 map thi] về đích 95%, đâm 5%, TB 3.84 s/vòng, nhanh nhất 3.24 s, tốc độ max 8.0 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô  3260 ( 200.3M): điểm   71.5 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 6.9 cổng | nhiễu 0.02 |  5.18 h
+  lô  3270 ( 200.9M): điểm   68.8 | về đích  78% (TB  3.9 s) | đâm  22% | qua TB 6.8 cổng | nhiễu 0.02 |  5.21 h
+  lô  3280 ( 201.5M): điểm   70.6 | về đích  80% (TB  3.8 s) | đâm  20% | qua TB 6.9 cổng | nhiễu 0.02 |  5.23 h
+  lô  3290 ( 202.1M): điểm   70.1 | về đích  79% (TB  3.8 s) | đâm  20% | qua TB 6.9 cổng | nhiễu 0.02 |  5.26 h
+  lô  3300 ( 202.8M): điểm   72.7 | về đích  83% (TB  3.9 s) | đâm  17% | qua TB 7.1 cổng | nhiễu 0.02 |  5.28 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 3.84 s/vòng, nhanh nhất 3.40 s, tốc độ max 7.3 m/s
+  lô  3310 ( 203.4M): điểm   71.6 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.02 |  5.31 h
+  lô  3320 ( 204.0M): điểm   72.5 | về đích  81% (TB  3.8 s) | đâm  19% | qua TB 7.1 cổng | nhiễu 0.02 |  5.34 h
+  lô  3330 ( 204.6M): điểm   70.2 | về đích  78% (TB  3.8 s) | đâm  21% | qua TB 6.9 cổng | nhiễu 0.02 |  5.36 h
+  lô  3340 ( 205.2M): điểm   68.3 | về đích  77% (TB  3.9 s) | đâm  23% | qua TB 6.8 cổng | nhiễu 0.02 |  5.38 h
+  lô  3350 ( 205.8M): điểm   68.3 | về đích  78% (TB  3.8 s) | đâm  23% | qua TB 6.8 cổng | nhiễu 0.02 |  5.41 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 3.80 s/vòng, nhanh nhất 3.52 s, tốc độ max 7.4 m/s
+  lô  3360 ( 206.4M): điểm   70.2 | về đích  80% (TB  3.8 s) | đâm  20% | qua TB 6.9 cổng | nhiễu 0.02 |  5.44 h
+  lô  3370 ( 207.1M): điểm   72.0 | về đích  82% (TB  3.8 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.02 |  5.46 h
+  lô  3380 ( 207.7M): điểm   71.2 | về đích  81% (TB  3.9 s) | đâm  19% | qua TB 7.0 cổng | nhiễu 0.02 |  5.49 h
+  lô  3390 ( 208.3M): điểm   70.6 | về đích  80% (TB  3.8 s) | đâm  20% | qua TB 6.9 cổng | nhiễu 0.02 |  5.51 h
+  lô  3400 ( 208.9M): điểm   71.8 | về đích  81% (TB  3.9 s) | đâm  18% | qua TB 7.0 cổng | nhiễu 0.02 |  5.53 h
+  [chấm 20 map thi] về đích 70%, đâm 30%, TB 3.89 s/vòng, nhanh nhất 3.54 s, tốc độ max 7.9 m/s
+  lô  3410 ( 209.5M): điểm   69.1 | về đích  78% (TB  3.9 s) | đâm  22% | qua TB 6.8 cổng | nhiễu 0.02 |  5.56 h
+  lô  3420 ( 210.1M): điểm   70.3 | về đích  80% (TB  3.8 s) | đâm  20% | qua TB 6.9 cổng | nhiễu 0.02 |  5.59 h
+  lô  3430 ( 210.7M): điểm   72.9 | về đích  82% (TB  3.9 s) | đâm  18% | qua TB 7.1 cổng | nhiễu 0.02 |  5.61 h
+  lô  3440 ( 211.4M): điểm   69.2 | về đích  79% (TB  3.9 s) | đâm  21% | qua TB 6.8 cổng | nhiễu 0.02 |  5.64 h
+  lô  3450 ( 212.0M): điểm   70.1 | về đích  80% (TB  3.9 s) | đâm  20% | qua TB 6.9 cổng | nhiễu 0.02 |  5.66 h
+  [chấm 20 map thi] về đích 80%, đâm 20%, TB 3.87 s/vòng, nhanh nhất 3.60 s, tốc độ max 7.6 m/s

@@ -1,0 +1,17 @@
+ĐUA QUA CỔNG chỉ bằng cảm biến: 240 drone / 10 nhân CPU, lô 61440 bước, 4882 lô (300M bước), học trên cuda
+  lô    10 (   0.6M): điểm  -20.4 | về đích   0% (TB  0.0 s) | đâm  14% | qua TB 0.1 cổng | nhiễu 0.56 |  0.03 h
+  lô    20 (   1.2M): điểm  -12.8 | về đích   0% (TB  0.0 s) | đâm  72% | qua TB 0.3 cổng | nhiễu 0.52 |  0.05 h
+  lô    30 (   1.8M): điểm  -12.1 | về đích   0% (TB  0.0 s) | đâm  77% | qua TB 0.4 cổng | nhiễu 0.51 |  0.08 h
+  lô    40 (   2.5M): điểm  -10.0 | về đích   0% (TB  0.0 s) | đâm  87% | qua TB 0.5 cổng | nhiễu 0.50 |  0.10 h
+  lô    50 (   3.1M): điểm   -8.3 | về đích   0% (TB  0.0 s) | đâm  89% | qua TB 0.6 cổng | nhiễu 0.47 |  0.13 h
+  [chấm 20 map thi] về đích 0%, đâm 70%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 7.9 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô    60 (   3.7M): điểm   -6.9 | về đích   0% (TB  0.0 s) | đâm  93% | qua TB 0.7 cổng | nhiễu 0.46 |  0.16 h
+  lô    70 (   4.3M): điểm   -5.8 | về đích   0% (TB  0.0 s) | đâm  95% | qua TB 0.8 cổng | nhiễu 0.45 |  0.19 h
+  lô    80 (   4.9M): điểm   -5.0 | về đích   0% (TB  0.0 s) | đâm  97% | qua TB 0.8 cổng | nhiễu 0.43 |  0.21 h
+  lô    90 (   5.5M): điểm   -4.2 | về đích   0% (TB  0.0 s) | đâm  99% | qua TB 0.9 cổng | nhiễu 0.42 |  0.24 h
+  lô   100 (   6.1M): điểm   -3.8 | về đích   0% (TB  0.0 s) | đâm  99% | qua TB 0.9 cổng | nhiễu 0.41 |  0.26 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 5.8 m/s
+  lô   110 (   6.8M): điểm   -2.6 | về đích   0% (TB  0.0 s) | đâm  99% | qua TB 1.0 cổng | nhiễu 0.39 |  0.29 h
+  lô   120 (   7.4M): điểm   -1.9 | về đích   0% (TB  0.0 s) | đâm 100% | qua TB 1.1 cổng | nhiễu 0.38 |  0.31 h
+  lô   130 (   8.0M): điểm   -1.9 | về đích   0% (TB  0.0 s) | đâm  99% | qua TB 1.0 cổng | nhiễu 0.37 |  0.34 h
+  lô   140 (   8.6M): điểm   -0.5 | về đích   0% (TB  7.0 s) | đâm 100% | qua TB 1.2 cổng | nhiễu 0.36 |  0.37 h

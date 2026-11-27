@@ -1,0 +1,80 @@
+<!-- TỰ SINH bởi description/tracks/make_track.py (tao_dong), đừng sửa tay. Dùng cho train: cổng dời được. -->
+<mujoco model="duong dua dong">
+  <include file="scene_khung_dac.xml"/>
+  <visual><global offwidth="1920" offheight="1080"/></visual>
+  <default>
+    <default class="cong">
+      <default class="khung"><geom type="box" contype="1" conaffinity="1"/></default>
+      <default class="chan"><geom type="box" rgba="0.3 0.3 0.3 1" contype="1" conaffinity="1"/></default>
+    </default>
+  </default>
+  <worldbody>
+    <body name="be_xuat_phat" mocap="true" pos="0 0 0.005">
+      <geom type="box" size="0.2 0.2 0.005" rgba="0.95 0.95 0.95 1" contype="0" conaffinity="0"/>
+    </body>
+    <body name="cong_01" mocap="true" pos="0 10 1">
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+    <body name="cong_02" mocap="true" pos="1 10 1">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+    <body name="cong_03" mocap="true" pos="2 10 1">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+    <body name="cong_04" mocap="true" pos="3 10 1">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+    <body name="cong_05" mocap="true" pos="4 10 1">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+    <body name="cong_06" mocap="true" pos="5 10 1">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+    <body name="cong_07" mocap="true" pos="6 10 1">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+    <body name="cong_08" mocap="true" pos="7 10 1">
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 0.375 -1.9"/>
+      <geom class="chan" size="0.025 0.025 1.5" pos="0 -0.375 -1.9"/>
+    </body>
+  </worldbody>
+</mujoco>

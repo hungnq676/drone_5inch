@@ -1,0 +1,38 @@
+ĐUA QUA CỔNG chỉ bằng cảm biến: 240 drone / 10 nhân CPU, lô 61440 bước, 4882 lô (300M bước), học trên cuda
+  lô    10 (   0.6M): điểm   -9.5 | về đích   0% (TB  0.0 s) | đâm  24% | qua TB 0.1 cổng | nhiễu 0.57 |  0.03 h
+  lô    20 (   1.2M): điểm   -4.0 | về đích   0% (TB  0.0 s) | đâm  56% | qua TB 0.3 cổng | nhiễu 0.55 |  0.07 h
+  lô    30 (   1.8M): điểm   -3.1 | về đích   0% (TB  0.0 s) | đâm  56% | qua TB 0.3 cổng | nhiễu 0.54 |  0.10 h
+  lô    40 (   2.5M): điểm   -3.6 | về đích   0% (TB  0.0 s) | đâm  51% | qua TB 0.3 cổng | nhiễu 0.52 |  0.13 h
+  lô    50 (   3.1M): điểm    0.2 | về đích   0% (TB  0.0 s) | đâm  49% | qua TB 0.5 cổng | nhiễu 0.51 |  0.16 h
+  [chấm 20 map thi] về đích 0%, đâm 95%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 17.1 m/s  <- TỐT NHẤT, đã lưu race_best.pt
+  lô    60 (   3.7M): điểm    2.6 | về đích   0% (TB  0.0 s) | đâm  46% | qua TB 0.6 cổng | nhiễu 0.50 |  0.19 h
+  lô    70 (   4.3M): điểm    3.9 | về đích   0% (TB  0.0 s) | đâm  33% | qua TB 0.7 cổng | nhiễu 0.49 |  0.21 h
+  lô    80 (   4.9M): điểm    4.1 | về đích   0% (TB  0.0 s) | đâm  33% | qua TB 0.8 cổng | nhiễu 0.47 |  0.24 h
+  lô    90 (   5.5M): điểm    4.6 | về đích   0% (TB  0.0 s) | đâm  30% | qua TB 0.8 cổng | nhiễu 0.45 |  0.26 h
+  lô   100 (   6.1M): điểm    4.7 | về đích   0% (TB  0.0 s) | đâm  28% | qua TB 0.8 cổng | nhiễu 0.43 |  0.29 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 17.6 m/s
+  lô   110 (   6.8M): điểm    5.2 | về đích   0% (TB  0.0 s) | đâm  22% | qua TB 0.9 cổng | nhiễu 0.41 |  0.32 h
+  lô   120 (   7.4M): điểm    5.5 | về đích   0% (TB  0.0 s) | đâm  20% | qua TB 0.9 cổng | nhiễu 0.40 |  0.34 h
+  lô   130 (   8.0M): điểm    5.4 | về đích   0% (TB  0.0 s) | đâm  25% | qua TB 0.9 cổng | nhiễu 0.38 |  0.37 h
+  lô   140 (   8.6M): điểm    5.9 | về đích   0% (TB  0.0 s) | đâm  19% | qua TB 0.9 cổng | nhiễu 0.37 |  0.39 h
+  lô   150 (   9.2M): điểm    6.0 | về đích   0% (TB  0.0 s) | đâm  23% | qua TB 0.9 cổng | nhiễu 0.36 |  0.42 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 17.5 m/s
+  lô   160 (   9.8M): điểm    6.1 | về đích   0% (TB  0.0 s) | đâm  22% | qua TB 0.9 cổng | nhiễu 0.34 |  0.44 h
+  lô   170 (  10.4M): điểm    6.2 | về đích   0% (TB  0.0 s) | đâm  22% | qua TB 0.9 cổng | nhiễu 0.33 |  0.47 h
+  lô   180 (  11.1M): điểm    6.5 | về đích   0% (TB  0.0 s) | đâm  22% | qua TB 0.9 cổng | nhiễu 0.32 |  0.49 h
+  lô   190 (  11.7M): điểm    6.0 | về đích   0% (TB  0.0 s) | đâm  24% | qua TB 0.9 cổng | nhiễu 0.31 |  0.52 h
+  lô   200 (  12.3M): điểm    6.1 | về đích   0% (TB  0.0 s) | đâm  27% | qua TB 0.9 cổng | nhiễu 0.30 |  0.55 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 17.5 m/s
+  lô   210 (  12.9M): điểm    6.5 | về đích   0% (TB  0.0 s) | đâm  22% | qua TB 0.9 cổng | nhiễu 0.29 |  0.57 h
+  lô   220 (  13.5M): điểm    6.8 | về đích   0% (TB  0.0 s) | đâm  23% | qua TB 1.0 cổng | nhiễu 0.28 |  0.60 h
+  lô   230 (  14.1M): điểm    6.7 | về đích   0% (TB  0.0 s) | đâm  24% | qua TB 0.9 cổng | nhiễu 0.27 |  0.62 h
+  lô   240 (  14.7M): điểm    6.6 | về đích   0% (TB  0.0 s) | đâm  24% | qua TB 1.0 cổng | nhiễu 0.26 |  0.65 h
+  lô   250 (  15.4M): điểm    6.9 | về đích   0% (TB  0.0 s) | đâm  21% | qua TB 1.0 cổng | nhiễu 0.25 |  0.67 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 17.5 m/s
+  lô   260 (  16.0M): điểm    6.7 | về đích   0% (TB  0.0 s) | đâm  24% | qua TB 0.9 cổng | nhiễu 0.24 |  0.70 h
+  lô   270 (  16.6M): điểm    6.9 | về đích   0% (TB  0.0 s) | đâm  23% | qua TB 1.0 cổng | nhiễu 0.24 |  0.72 h
+  lô   280 (  17.2M): điểm    7.1 | về đích   0% (TB  0.0 s) | đâm  22% | qua TB 1.0 cổng | nhiễu 0.23 |  0.75 h
+  lô   290 (  17.8M): điểm    6.8 | về đích   0% (TB  0.0 s) | đâm  24% | qua TB 1.0 cổng | nhiễu 0.22 |  0.77 h
+  lô   300 (  18.4M): điểm    6.9 | về đích   0% (TB  0.0 s) | đâm  20% | qua TB 1.0 cổng | nhiễu 0.22 |  0.80 h
+  [chấm 20 map thi] về đích 0%, đâm 100%, TB 99.00 s/vòng, nhanh nhất 99.00 s, tốc độ max 17.5 m/s
+  lô   310 (  19.0M): điểm    7.2 | về đích   0% (TB  0.0 s) | đâm  24% | qua TB 1.0 cổng | nhiễu 0.21 |  0.83 h

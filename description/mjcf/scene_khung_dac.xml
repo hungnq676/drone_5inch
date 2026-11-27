@@ -1,0 +1,20 @@
+<!-- Cảnh để thử drone KHUNG ĐẶC: sàn + đèn + con drone (drone_khung_dac.xml). Mở file NÀY trong viewer. -->
+<mujoco model="san thu drone">
+  <include file="drone_khung_dac.xml"/>
+
+  <visual><headlight ambient="0.5 0.5 0.5" diffuse="0.6 0.6 0.6"/></visual>
+
+  <asset>
+    <!-- trời: xanh nhạt dần xuống trắng -->
+    <texture name="troi" type="skybox" builtin="gradient" rgb1="0.45 0.65 0.9" rgb2="0.95 0.97 1" width="512" height="3072"/>
+    <!-- sàn: ô bàn cờ 1 m x 1 m (dễ ước lượng khoảng cách bay) -->
+    <texture name="san" type="2d" builtin="checker" width="512" height="512" rgb1="0.55 0.6 0.55" rgb2="0.42 0.47 0.42" mark="edge" markrgb="0.8 0.8 0.8"/>
+    <material name="san" texture="san" texrepeat="1 1" texuniform="true" reflectance="0.1"/>
+  </asset>
+
+  <worldbody>
+    <light pos="0 0 5" dir="0 0 -1" directional="true" diffuse="0.7 0.7 0.7"/>
+    <!-- size="0 0 ..." = sàn VÔ HẠN (trước là 6 m x 6 m, ra ngoài thì đen) -->
+    <geom name="san" type="plane" size="0 0 0.05" material="san"/>
+  </worldbody>
+</mujoco>

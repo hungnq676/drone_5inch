@@ -1,0 +1,252 @@
+<!-- TỰ SINH bởi description/tracks/make_track.py, đừng sửa tay (sửa DUONG_DUA trong file .py rồi chạy lại). -->
+<!-- Đường đua track_02: 12 cổng, lòng cổng 70 x 70 cm. Mở file NÀY trong viewer. -->
+<mujoco model="duong dua track_02">
+  <include file="scene.xml"/>
+  <visual><global offwidth="1920" offheight="1080"/></visual>
+
+  <default>
+    <default class="cong">
+      <default class="khung"><geom type="box" contype="1" conaffinity="1"/></default>
+      <default class="chan"><geom type="box" rgba="0.3 0.3 0.3 1" contype="1" conaffinity="1"/></default>
+      <!-- chấm gợi ý đường bay: chỉ để nhìn, không va chạm (nhóm 2: bấm phím 2 trong viewer để ẩn/hiện) -->
+      <default class="goi_y"><geom type="sphere" size="0.015" rgba="0.2 0.5 1 0.6" contype="0" conaffinity="0" group="2"/></default>
+    </default>
+  </default>
+
+  <worldbody>
+    <!-- bệ xuất phát -->
+    <geom name="be_xuat_phat" type="box" size="0.2 0.2 0.005" pos="-0.75 0.5 0.005" euler="0 0 0"
+          rgba="0.95 0.95 0.95 1" contype="0" conaffinity="0"/>
+    <site name="xuat_phat" pos="-0.75 0.5 0.02" size="0.03" rgba="0 1 0 1"/>
+
+    <body name="cong_01" pos="0.0 0.5 0.5" euler="0 0 0">
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="0.1 0.8 0.2 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_01" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.050" pos="0.000 0.875 0.050" euler="0 0 0"/>
+    <geom class="chan" size="0.025 0.025 0.050" pos="0.000 0.125 0.050" euler="0 0 0"/>
+    <body name="cong_02" pos="1.15 1.15 1.0" euler="0 0 -45">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_02" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.300" pos="1.415 1.415 0.300" euler="0 0 -45"/>
+    <geom class="chan" size="0.025 0.025 0.300" pos="0.885 0.885 0.300" euler="0 0 -45"/>
+    <body name="cong_03" pos="0.5 0.0 1.3" euler="0 0 -90">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_03" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.450" pos="0.875 0.000 0.450" euler="0 0 -90"/>
+    <geom class="chan" size="0.025 0.025 0.450" pos="0.125 -0.000 0.450" euler="0 0 -90"/>
+    <body name="cong_04" pos="1.15 -1.15 1.6" euler="0 0 -135">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_04" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.600" pos="1.415 -1.415 0.600" euler="0 0 -135"/>
+    <geom class="chan" size="0.025 0.025 0.600" pos="0.885 -0.885 0.600" euler="0 0 -135"/>
+    <body name="cong_05" pos="0.0 -0.5 0.5" euler="0 0 180">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_05" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.050" pos="-0.000 -0.875 0.050" euler="0 0 180"/>
+    <geom class="chan" size="0.025 0.025 0.050" pos="0.000 -0.125 0.050" euler="0 0 180"/>
+    <body name="cong_06" pos="-1.15 -1.15 1.2" euler="0 0 135">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_06" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.400" pos="-1.415 -1.415 0.400" euler="0 0 135"/>
+    <geom class="chan" size="0.025 0.025 0.400" pos="-0.885 -0.885 0.400" euler="0 0 135"/>
+    <body name="cong_07" pos="-0.5 0.0 1.3" euler="0 0 90">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_07" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.450" pos="-0.875 0.000 0.450" euler="0 0 90"/>
+    <geom class="chan" size="0.025 0.025 0.450" pos="-0.125 -0.000 0.450" euler="0 0 90"/>
+    <body name="cong_08" pos="-1.15 1.15 0.8" euler="0 0 45">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_08" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.200" pos="-1.415 1.415 0.200" euler="0 0 45"/>
+    <geom class="chan" size="0.025 0.025 0.200" pos="-0.885 0.885 0.200" euler="0 0 45"/>
+    <body name="cong_09" pos="0.0 0.5 1.3" euler="0 0 0">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_09" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.450" pos="0.000 0.875 0.450" euler="0 0 0"/>
+    <geom class="chan" size="0.025 0.025 0.450" pos="0.000 0.125 0.450" euler="0 0 0"/>
+    <body name="cong_10" pos="0.5 0.0 0.5" euler="0 0 -90">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_10" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.050" pos="0.875 0.000 0.050" euler="0 0 -90"/>
+    <geom class="chan" size="0.025 0.025 0.050" pos="0.125 -0.000 0.050" euler="0 0 -90"/>
+    <body name="cong_11" pos="0.0 -0.5 1.3" euler="0 0 180">
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="1 0.55 0 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_11" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.450" pos="-0.000 -0.875 0.450" euler="0 0 180"/>
+    <geom class="chan" size="0.025 0.025 0.450" pos="0.000 -0.125 0.450" euler="0 0 180"/>
+    <body name="cong_12" pos="-0.5 0.0 0.5" euler="0 0 90">
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.4 0.025" pos="0 0 0.375"/>
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.4 0.025" pos="0 0 -0.375"/>
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.025 0.35" pos="0 0.375 0"/>
+      <geom class="khung" rgba="0.85 0.1 0.1 1" size="0.025 0.025 0.35" pos="0 -0.375 0"/>
+      <site name="cong_12" size="0.02" rgba="1 1 1 0.3"/>
+    </body>
+    <geom class="chan" size="0.025 0.025 0.050" pos="-0.875 0.000 0.050" euler="0 0 90"/>
+    <geom class="chan" size="0.025 0.025 0.050" pos="-0.125 -0.000 0.050" euler="0 0 90"/>
+    <geom class="goi_y" pos="-0.750 0.500 0.050"/>
+    <geom class="goi_y" pos="-0.737 0.500 0.133"/>
+    <geom class="goi_y" pos="-0.700 0.500 0.209"/>
+    <geom class="goi_y" pos="-0.643 0.500 0.276"/>
+    <geom class="goi_y" pos="-0.570 0.500 0.334"/>
+    <geom class="goi_y" pos="-0.484 0.500 0.384"/>
+    <geom class="goi_y" pos="-0.390 0.500 0.426"/>
+    <geom class="goi_y" pos="-0.291 0.500 0.458"/>
+    <geom class="goi_y" pos="-0.190 0.500 0.481"/>
+    <geom class="goi_y" pos="-0.092 0.500 0.495"/>
+    <geom class="goi_y" pos="0.000 0.500 0.500"/>
+    <geom class="goi_y" pos="0.138 0.527 0.514"/>
+    <geom class="goi_y" pos="0.268 0.600 0.552"/>
+    <geom class="goi_y" pos="0.393 0.703 0.608"/>
+    <geom class="goi_y" pos="0.512 0.825 0.676"/>
+    <geom class="goi_y" pos="0.627 0.950 0.750"/>
+    <geom class="goi_y" pos="0.737 1.065 0.824"/>
+    <geom class="goi_y" pos="0.844 1.156 0.892"/>
+    <geom class="goi_y" pos="0.948 1.210 0.948"/>
+    <geom class="goi_y" pos="1.050 1.213 0.986"/>
+    <geom class="goi_y" pos="1.150 1.150 1.000"/>
+    <geom class="goi_y" pos="1.209 1.052 1.008"/>
+    <geom class="goi_y" pos="1.205 0.951 1.031"/>
+    <geom class="goi_y" pos="1.150 0.846 1.065"/>
+    <geom class="goi_y" pos="1.059 0.737 1.106"/>
+    <geom class="goi_y" pos="0.945 0.625 1.150"/>
+    <geom class="goi_y" pos="0.821 0.508 1.194"/>
+    <geom class="goi_y" pos="0.701 0.387 1.235"/>
+    <geom class="goi_y" pos="0.598 0.262 1.269"/>
+    <geom class="goi_y" pos="0.527 0.133 1.292"/>
+    <geom class="goi_y" pos="0.500 0.000 1.300"/>
+    <geom class="goi_y" pos="0.527 -0.133 1.308"/>
+    <geom class="goi_y" pos="0.598 -0.262 1.331"/>
+    <geom class="goi_y" pos="0.701 -0.387 1.365"/>
+    <geom class="goi_y" pos="0.821 -0.508 1.406"/>
+    <geom class="goi_y" pos="0.945 -0.625 1.450"/>
+    <geom class="goi_y" pos="1.059 -0.737 1.494"/>
+    <geom class="goi_y" pos="1.150 -0.846 1.535"/>
+    <geom class="goi_y" pos="1.205 -0.951 1.569"/>
+    <geom class="goi_y" pos="1.209 -1.052 1.592"/>
+    <geom class="goi_y" pos="1.150 -1.150 1.600"/>
+    <geom class="goi_y" pos="1.035 -1.230 1.569"/>
+    <geom class="goi_y" pos="0.930 -1.238 1.486"/>
+    <geom class="goi_y" pos="0.831 -1.188 1.362"/>
+    <geom class="goi_y" pos="0.735 -1.096 1.213"/>
+    <geom class="goi_y" pos="0.638 -0.977 1.050"/>
+    <geom class="goi_y" pos="0.536 -0.845 0.887"/>
+    <geom class="goi_y" pos="0.425 -0.717 0.738"/>
+    <geom class="goi_y" pos="0.301 -0.606 0.614"/>
+    <geom class="goi_y" pos="0.161 -0.529 0.531"/>
+    <geom class="goi_y" pos="0.000 -0.500 0.500"/>
+    <geom class="goi_y" pos="-0.144 -0.528 0.520"/>
+    <geom class="goi_y" pos="-0.277 -0.601 0.573"/>
+    <geom class="goi_y" pos="-0.402 -0.707 0.651"/>
+    <geom class="goi_y" pos="-0.519 -0.830 0.746"/>
+    <geom class="goi_y" pos="-0.630 -0.957 0.850"/>
+    <geom class="goi_y" pos="-0.736 -1.073 0.954"/>
+    <geom class="goi_y" pos="-0.840 -1.165 1.049"/>
+    <geom class="goi_y" pos="-0.943 -1.218 1.127"/>
+    <geom class="goi_y" pos="-1.046 -1.217 1.180"/>
+    <geom class="goi_y" pos="-1.150 -1.150 1.200"/>
+    <geom class="goi_y" pos="-1.208 -1.054 1.203"/>
+    <geom class="goi_y" pos="-1.202 -0.953 1.210"/>
+    <geom class="goi_y" pos="-1.147 -0.847 1.222"/>
+    <geom class="goi_y" pos="-1.056 -0.737 1.235"/>
+    <geom class="goi_y" pos="-0.942 -0.624 1.250"/>
+    <geom class="goi_y" pos="-0.819 -0.506 1.265"/>
+    <geom class="goi_y" pos="-0.699 -0.384 1.278"/>
+    <geom class="goi_y" pos="-0.598 -0.259 1.290"/>
+    <geom class="goi_y" pos="-0.527 -0.131 1.297"/>
+    <geom class="goi_y" pos="-0.500 0.000 1.300"/>
+    <geom class="goi_y" pos="-0.527 0.138 1.286"/>
+    <geom class="goi_y" pos="-0.600 0.268 1.248"/>
+    <geom class="goi_y" pos="-0.703 0.393 1.192"/>
+    <geom class="goi_y" pos="-0.825 0.512 1.124"/>
+    <geom class="goi_y" pos="-0.950 0.627 1.050"/>
+    <geom class="goi_y" pos="-1.065 0.737 0.976"/>
+    <geom class="goi_y" pos="-1.156 0.844 0.908"/>
+    <geom class="goi_y" pos="-1.210 0.948 0.852"/>
+    <geom class="goi_y" pos="-1.213 1.050 0.814"/>
+    <geom class="goi_y" pos="-1.150 1.150 0.800"/>
+    <geom class="goi_y" pos="-1.050 1.213 0.814"/>
+    <geom class="goi_y" pos="-0.948 1.210 0.852"/>
+    <geom class="goi_y" pos="-0.844 1.156 0.908"/>
+    <geom class="goi_y" pos="-0.737 1.065 0.976"/>
+    <geom class="goi_y" pos="-0.627 0.950 1.050"/>
+    <geom class="goi_y" pos="-0.512 0.825 1.124"/>
+    <geom class="goi_y" pos="-0.393 0.703 1.192"/>
+    <geom class="goi_y" pos="-0.268 0.600 1.248"/>
+    <geom class="goi_y" pos="-0.138 0.527 1.286"/>
+    <geom class="goi_y" pos="0.000 0.500 1.300"/>
+    <geom class="goi_y" pos="0.100 0.496 1.278"/>
+    <geom class="goi_y" pos="0.189 0.482 1.217"/>
+    <geom class="goi_y" pos="0.265 0.459 1.127"/>
+    <geom class="goi_y" pos="0.330 0.426 1.018"/>
+    <geom class="goi_y" pos="0.383 0.383 0.900"/>
+    <geom class="goi_y" pos="0.426 0.330 0.782"/>
+    <geom class="goi_y" pos="0.459 0.265 0.673"/>
+    <geom class="goi_y" pos="0.482 0.189 0.583"/>
+    <geom class="goi_y" pos="0.496 0.100 0.522"/>
+    <geom class="goi_y" pos="0.500 0.000 0.500"/>
+    <geom class="goi_y" pos="0.496 -0.100 0.522"/>
+    <geom class="goi_y" pos="0.482 -0.189 0.583"/>
+    <geom class="goi_y" pos="0.459 -0.265 0.673"/>
+    <geom class="goi_y" pos="0.426 -0.330 0.782"/>
+    <geom class="goi_y" pos="0.383 -0.383 0.900"/>
+    <geom class="goi_y" pos="0.330 -0.426 1.018"/>
+    <geom class="goi_y" pos="0.265 -0.459 1.127"/>
+    <geom class="goi_y" pos="0.189 -0.482 1.217"/>
+    <geom class="goi_y" pos="0.100 -0.496 1.278"/>
+    <geom class="goi_y" pos="0.000 -0.500 1.300"/>
+    <geom class="goi_y" pos="-0.100 -0.496 1.278"/>
+    <geom class="goi_y" pos="-0.189 -0.482 1.217"/>
+    <geom class="goi_y" pos="-0.265 -0.459 1.127"/>
+    <geom class="goi_y" pos="-0.330 -0.426 1.018"/>
+    <geom class="goi_y" pos="-0.383 -0.383 0.900"/>
+    <geom class="goi_y" pos="-0.426 -0.330 0.782"/>
+    <geom class="goi_y" pos="-0.459 -0.265 0.673"/>
+    <geom class="goi_y" pos="-0.482 -0.189 0.583"/>
+    <geom class="goi_y" pos="-0.496 -0.100 0.522"/>
+    <geom class="goi_y" pos="-0.500 0.000 0.500"/>
+  </worldbody>
+</mujoco>

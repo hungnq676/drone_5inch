@@ -1,0 +1,224 @@
+<!--
+  DRONE 5 inch: khung "Fpvdrone 5 inch" (Yiğit Can Yıldız) in PETG-CF đặc 100%,
+  motor DYS Samguk Wei 2207 2600KV, cánh HQ 5146 (3 lá), pin 4S.
+  File này chỉ có CON DRONE. Sàn, đèn nằm trong scene.xml (mở description/mjcf/scene.xml để xem).
+  Nguồn của từng số: xem description/THONG_SO.md.
+  Chưa có: camera, VTX, receiver (chờ cân).
+
+  Hệ trục (giống PX4/ROS): X = phía trước (mũi, đầu có camera), Y = bên trái, Z = lên.
+  Gốc tọa độ: giữa 4 motor, ngang mặt trên của tay (chỗ motor đặt).
+
+  Số đo từ file 3D (ghép theo lỗ vít, sai số khớp lỗ 0.07 mm):
+    Tâm motor:  trước phải ( 0.0674, -0.0820)   trước trái ( 0.0674,  0.0820)
+                sau phải   (-0.0674, -0.0819)   sau trái   (-0.0674,  0.0819)   [m, Z = 0]
+    Chéo motor-motor 212 mm; ngang 164 mm, dọc 135 mm (khung dẹt, rộng hơn dài).
+    Khối lượng khung nhựa: 83 g (PETG-CF 1.30 g/cm3, đặc).
+    Phụ kiện (khối lượng khai báo ở các class "coc28" ... "dai_oc_rut" bên dưới):
+      4 cọc đồng lục giác M3 28 mm  6.25 g/cái   (ngang 6 mm, đồng thau 8.5 g/cm3)
+      4 cọc đồng lục giác M3 20 mm  4.47 g/cái
+      12 ốc M3 8 mm  0.91 g | 6 ốc M3 11 mm  1.07 g | 4 ốc M3 18 mm  1.46 g   (thép, đầu tròn)
+      6 đai ốc rút M3  0.36 g
+      Tổng phụ kiện khoảng 68 g -> khung + phụ kiện khoảng 151 g.
+    Độ cao (Z, mm): tấm đáy -8.0..-5.5 | tay -5.5..0 | tấm kẹp 0..2.5 | tấm nóc 22.5..25.0
+  Tấm đáy: hốc ngàm quay lên. Tấm nóc: hốc ngàm quay xuống.
+  Tấm hông kẹp camera: ngàm cắm vào hốc ở tấm đáy và tấm nóc, ở phía mũi.
+-->
+<mujoco model="drone 5 inch">
+  <compiler meshdir="../meshes"/>   <!-- file STL nằm ở description/meshes/ (tính từ thư mục chứa file này) -->
+  <!-- 2 ms mỗi bước = 500 Hz.
+       Từ trường Trái Đất (hệ thế giới: X = Bắc, Y = Tây, Z = lên), gần đúng cho miền Bắc Việt Nam:
+       cường độ khoảng 0.45 gauss, chúc xuống khoảng 30 độ -> (0.39, 0, -0.225). La bàn đọc từ đây. -->
+  <option timestep="0.002" magnetic="0.39 0 -0.225"/>
+
+  <asset>
+    <mesh name="downplate" file="downplate.stl" inertia="exact"/>
+    <mesh name="midplate" file="midplate.stl" inertia="exact"/>
+    <mesh name="topplate" file="topplate.stl" inertia="exact"/>
+    <mesh name="arm_truoc_phai" file="arm_truoc_phai.stl" inertia="exact"/>
+    <mesh name="arm_truoc_trai" file="arm_truoc_trai.stl" inertia="exact"/>
+    <mesh name="arm_sau_phai" file="arm_sau_phai.stl" inertia="exact"/>
+    <mesh name="arm_sau_trai" file="arm_sau_trai.stl" inertia="exact"/>
+    <mesh name="sideplate_phai" file="sideplate_phai.stl" inertia="exact"/>
+    <mesh name="sideplate_trai" file="sideplate_trai.stl" inertia="exact"/>
+    <!-- cọc lục giác: MuJoCo tự bọc 12 đỉnh thành khối lăng trụ 6 cạnh -->
+    <mesh name="luc_giac_28" vertex="0.00346 0.00000 -0.0140  0.00173 0.00300 -0.0140  -0.00173 0.00300 -0.0140  -0.00346 0.00000 -0.0140  -0.00173 -0.00300 -0.0140  0.00173 -0.00300 -0.0140  0.00346 0.00000 0.0140  0.00173 0.00300 0.0140  -0.00173 0.00300 0.0140  -0.00346 0.00000 0.0140  -0.00173 -0.00300 0.0140  0.00173 -0.00300 0.0140"/>
+    <mesh name="luc_giac_20" vertex="0.00346 0.00000 -0.0100  0.00173 0.00300 -0.0100  -0.00173 0.00300 -0.0100  -0.00346 0.00000 -0.0100  -0.00173 -0.00300 -0.0100  0.00173 -0.00300 -0.0100  0.00346 0.00000 0.0100  0.00173 0.00300 0.0100  -0.00173 0.00300 0.0100  -0.00346 0.00000 0.0100  -0.00173 -0.00300 0.0100  0.00173 -0.00300 0.0100"/>
+  </asset>
+
+  <default>
+  <!-- mọi mặc định của drone gói trong class "drone", để không lan sang sàn/cảnh trong scene.xml -->
+  <default class="drone">
+    <!-- mesh chỉ để nhìn + tính khối lượng: không va chạm (vỏ lồi của khung chữ X sẽ sai) -->
+    <geom type="mesh" density="1300" contype="0" conaffinity="0" rgba="0.15 0.15 0.15 1"/>
+    <!-- PHỤ KIỆN: sửa mass (kg, cho 1 cái) ở đây, mọi cái cùng loại tự đổi theo -->
+    <default class="coc28"><geom type="mesh" mesh="luc_giac_28" mass="0.00625" rgba="0.8 0.62 0.25 1"/></default>
+    <default class="coc20"><geom type="mesh" mesh="luc_giac_20" mass="0.00447" rgba="0.8 0.62 0.25 1"/></default>
+    <!-- ốc: cả khối lượng đặt ở thân ốc, đầu ốc chỉ để nhìn -->
+    <default class="oc8"><geom type="cylinder" size="0.0015" mass="0.00091" rgba="0.6 0.6 0.65 1"/></default>
+    <default class="oc11"><geom type="cylinder" size="0.0015" mass="0.00107" rgba="0.6 0.6 0.65 1"/></default>
+    <default class="oc18"><geom type="cylinder" size="0.0015" mass="0.00146" rgba="0.6 0.6 0.65 1"/></default>
+    <default class="dau_oc"><geom type="cylinder" size="0.0028" mass="0" rgba="0.6 0.6 0.65 1"/></default>
+    <default class="dai_oc_rut"><geom type="cylinder" size="0.0022" mass="0.00036" rgba="0.75 0.75 0.78 1"/></default>
+    <default class="vanh_dai_oc"><geom type="cylinder" size="0.0035" mass="0" rgba="0.75 0.75 0.78 1"/></default>
+    <!-- MẠCH: stack 30.5 x 30.5 mm ở giữa tấm kẹp (ESC dưới, FC trên) -->
+    <!-- FC MicoAir743v2: 36 x 36 x 8 mm, 10 g (nhà sản xuất) -->
+    <default class="fc"><geom type="box" size="0.018 0.018 0.004" mass="0.010" rgba="0.1 0.45 0.2 1"/></default>
+    <!-- ESC AM32 50 A 4-in-1: 44 x 43.5 x 5.2 mm, 14 g (datasheet dòng MicoAir AM32) -->
+    <default class="esc"><geom type="box" size="0.022 0.02175 0.0026" mass="0.014" rgba="0.15 0.15 0.4 1"/></default>
+    <!-- PIN 4S 1300 mAh: 73 x 35 x 36 mm, 165 g (thông số pin 4S 1300 mAh), buộc trên tấm nóc -->
+    <default class="pin"><geom type="box" size="0.0365 0.0175 0.018" mass="0.165" rgba="0.85 0.55 0.1 1"/></default>
+    <!-- 4 ốc M3 20 mm giữ stack: thép, 1.57 g (tính) -->
+    <default class="oc20"><geom type="cylinder" size="0.0015" mass="0.00157" rgba="0.6 0.6 0.65 1"/></default>
+    <!-- MOTOR + CÁNH -->
+    <!-- motor DYS Wei 2207: Ø27.7 x 18.2 mm, 34.4 g, đặt trên mặt tay (Z = 0) -->
+    <default class="motor"><geom type="cylinder" size="0.01385 0.0091" mass="0.0344" rgba="0.12 0.3 0.75 1"/></default>
+    <!-- cánh HQ 5146: đĩa Ø129.5 mm, 4.4 g (thông số cánh 5.1 inch 3 lá), chỉ để nhìn + khối lượng -->
+    <default class="canh"><geom type="cylinder" size="0.06475 0.001" mass="0.0044" rgba="0.9 0.9 0.9 0.25"/></default>
+    <!-- lực đẩy: lệnh = newton, 0 .. 10.75 N (đo Tyto, 4S). gear = (lực x y z, mô-men x y z) -->
+    <default class="luc_day"><motor ctrllimited="true" ctrlrange="0 10.75"/></default>
+  </default>
+  </default>
+
+  <worldbody>
+    <body name="drone" pos="0 0 0.3" childclass="drone">
+      <!-- ===== KHUNG ===== -->
+      <freejoint/>
+      <geom mesh="downplate"/>
+      <geom mesh="midplate"/>
+      <geom mesh="topplate"/>
+      <geom mesh="arm_truoc_phai"/>
+      <geom mesh="arm_truoc_trai"/>
+      <geom mesh="arm_sau_phai"/>
+      <geom mesh="arm_sau_trai"/>
+      <geom mesh="sideplate_phai" rgba="0.8 0.2 0.2 1"/>
+      <geom mesh="sideplate_trai" rgba="0.8 0.2 0.2 1"/>
+      <!-- 4 cọc 28 mm (mũi + đuôi): tấm đáy -> tấm nóc; mỗi đầu 1 ốc M3 8 mm -->
+      <geom class="coc28" pos="0.0537 -0.0132 0.0085"/>
+      <geom class="dau_oc" fromto="0.0537 -0.0132 0.0250 0.0537 -0.0132 0.0274"/>
+      <geom class="oc8" fromto="0.0537 -0.0132 0.0250 0.0537 -0.0132 0.0170"/>
+      <geom class="dau_oc" fromto="0.0537 -0.0132 -0.0080 0.0537 -0.0132 -0.0104"/>
+      <geom class="oc8" fromto="0.0537 -0.0132 -0.0080 0.0537 -0.0132 0.0000"/>
+      <geom class="coc28" pos="0.0537 0.0132 0.0085"/>
+      <geom class="dau_oc" fromto="0.0537 0.0132 0.0250 0.0537 0.0132 0.0274"/>
+      <geom class="oc8" fromto="0.0537 0.0132 0.0250 0.0537 0.0132 0.0170"/>
+      <geom class="dau_oc" fromto="0.0537 0.0132 -0.0080 0.0537 0.0132 -0.0104"/>
+      <geom class="oc8" fromto="0.0537 0.0132 -0.0080 0.0537 0.0132 0.0000"/>
+      <geom class="coc28" pos="-0.0703 -0.0103 0.0085"/>
+      <geom class="dau_oc" fromto="-0.0703 -0.0103 0.0250 -0.0703 -0.0103 0.0274"/>
+      <geom class="oc8" fromto="-0.0703 -0.0103 0.0250 -0.0703 -0.0103 0.0170"/>
+      <geom class="dau_oc" fromto="-0.0703 -0.0103 -0.0080 -0.0703 -0.0103 -0.0104"/>
+      <geom class="oc8" fromto="-0.0703 -0.0103 -0.0080 -0.0703 -0.0103 0.0000"/>
+      <geom class="coc28" pos="-0.0703 0.0103 0.0085"/>
+      <geom class="dau_oc" fromto="-0.0703 0.0103 0.0250 -0.0703 0.0103 0.0274"/>
+      <geom class="oc8" fromto="-0.0703 0.0103 0.0250 -0.0703 0.0103 0.0170"/>
+      <geom class="dau_oc" fromto="-0.0703 0.0103 -0.0080 -0.0703 0.0103 -0.0104"/>
+      <geom class="oc8" fromto="-0.0703 0.0103 -0.0080 -0.0703 0.0103 0.0000"/>
+      <!-- 4 cọc 20 mm (giữa): tấm kẹp -> tấm nóc; dưới là ốc M3 18 mm xuyên đáy + tay + tấm kẹp, trên là ốc M3 8 mm -->
+      <geom class="coc20" pos="-0.0276 -0.0245 0.0125"/>
+      <geom class="dau_oc" fromto="-0.0276 -0.0245 0.0250 -0.0276 -0.0245 0.0274"/>
+      <geom class="oc8" fromto="-0.0276 -0.0245 0.0250 -0.0276 -0.0245 0.0170"/>
+      <geom class="dau_oc" fromto="-0.0276 -0.0245 -0.0080 -0.0276 -0.0245 -0.0104"/>
+      <geom class="oc18" fromto="-0.0276 -0.0245 -0.0080 -0.0276 -0.0245 0.0100"/>
+      <geom class="coc20" pos="0.0274 -0.0245 0.0125"/>
+      <geom class="dau_oc" fromto="0.0274 -0.0245 0.0250 0.0274 -0.0245 0.0274"/>
+      <geom class="oc8" fromto="0.0274 -0.0245 0.0250 0.0274 -0.0245 0.0170"/>
+      <geom class="dau_oc" fromto="0.0274 -0.0245 -0.0080 0.0274 -0.0245 -0.0104"/>
+      <geom class="oc18" fromto="0.0274 -0.0245 -0.0080 0.0274 -0.0245 0.0100"/>
+      <geom class="coc20" pos="-0.0276 0.0245 0.0125"/>
+      <geom class="dau_oc" fromto="-0.0276 0.0245 0.0250 -0.0276 0.0245 0.0274"/>
+      <geom class="oc8" fromto="-0.0276 0.0245 0.0250 -0.0276 0.0245 0.0170"/>
+      <geom class="dau_oc" fromto="-0.0276 0.0245 -0.0080 -0.0276 0.0245 -0.0104"/>
+      <geom class="oc18" fromto="-0.0276 0.0245 -0.0080 -0.0276 0.0245 0.0100"/>
+      <geom class="coc20" pos="0.0274 0.0245 0.0125"/>
+      <geom class="dau_oc" fromto="0.0274 0.0245 0.0250 0.0274 0.0245 0.0274"/>
+      <geom class="oc8" fromto="0.0274 0.0245 0.0250 0.0274 0.0245 0.0170"/>
+      <geom class="dau_oc" fromto="0.0274 0.0245 -0.0080 0.0274 0.0245 -0.0104"/>
+      <geom class="oc18" fromto="0.0274 0.0245 -0.0080 0.0274 0.0245 0.0100"/>
+      <!-- 6 đai ốc rút ép trong tấm kẹp + 6 ốc M3 11 mm từ dưới lên (gốc tay + 2 lỗ giữa) -->
+      <geom class="dai_oc_rut" fromto="-0.0196 -0.0246 0 -0.0196 -0.0246 0.0025"/>
+      <geom class="vanh_dai_oc" fromto="-0.0196 -0.0246 0.0025 -0.0196 -0.0246 0.0033"/>
+      <geom class="dau_oc" fromto="-0.0196 -0.0246 -0.0080 -0.0196 -0.0246 -0.0104"/>
+      <geom class="oc11" fromto="-0.0196 -0.0246 -0.0080 -0.0196 -0.0246 0.0030"/>
+      <geom class="dai_oc_rut" fromto="0.0195 -0.0246 0 0.0195 -0.0246 0.0025"/>
+      <geom class="vanh_dai_oc" fromto="0.0195 -0.0246 0.0025 0.0195 -0.0246 0.0033"/>
+      <geom class="dau_oc" fromto="0.0195 -0.0246 -0.0080 0.0195 -0.0246 -0.0104"/>
+      <geom class="oc11" fromto="0.0195 -0.0246 -0.0080 0.0195 -0.0246 0.0030"/>
+      <geom class="dai_oc_rut" fromto="-0.0196 0.0246 0 -0.0196 0.0246 0.0025"/>
+      <geom class="vanh_dai_oc" fromto="-0.0196 0.0246 0.0025 -0.0196 0.0246 0.0033"/>
+      <geom class="dau_oc" fromto="-0.0196 0.0246 -0.0080 -0.0196 0.0246 -0.0104"/>
+      <geom class="oc11" fromto="-0.0196 0.0246 -0.0080 -0.0196 0.0246 0.0030"/>
+      <geom class="dai_oc_rut" fromto="0.0195 0.0246 0 0.0195 0.0246 0.0025"/>
+      <geom class="vanh_dai_oc" fromto="0.0195 0.0246 0.0025 0.0195 0.0246 0.0033"/>
+      <geom class="dau_oc" fromto="0.0195 0.0246 -0.0080 0.0195 0.0246 -0.0104"/>
+      <geom class="oc11" fromto="0.0195 0.0246 -0.0080 0.0195 0.0246 0.0030"/>
+      <geom class="dai_oc_rut" fromto="-0.0136 0.0000 0 -0.0136 0.0000 0.0025"/>
+      <geom class="vanh_dai_oc" fromto="-0.0136 0.0000 0.0025 -0.0136 0.0000 0.0033"/>
+      <geom class="dau_oc" fromto="-0.0136 0.0000 -0.0080 -0.0136 0.0000 -0.0104"/>
+      <geom class="oc11" fromto="-0.0136 0.0000 -0.0080 -0.0136 0.0000 0.0030"/>
+      <geom class="dai_oc_rut" fromto="0.0134 0.0000 0 0.0134 0.0000 0.0025"/>
+      <geom class="vanh_dai_oc" fromto="0.0134 0.0000 0.0025 0.0134 0.0000 0.0033"/>
+      <geom class="dau_oc" fromto="0.0134 0.0000 -0.0080 0.0134 0.0000 -0.0104"/>
+      <geom class="oc11" fromto="0.0134 0.0000 -0.0080 0.0134 0.0000 0.0030"/>
+      <!-- ===== MẠCH: stack ở tâm drone, lỗ 30.5 x 30.5 mm trên tấm kẹp (Z 0..2.5) =====
+           Ốc M3 20 mm luồn từ dưới tấm kẹp (đầu ốc nằm trong lỗ to Ø10.6 của tay + tấm đáy),
+           xuyên ESC rồi FC, siết đai ốc trên FC. Mặt dưới tấm nóc ở Z = 22.5 mm. -->
+      <geom name="esc" class="esc" pos="0 0 0.006"/>        <!-- Z 3.4 .. 8.6 mm -->
+      <geom name="fc" class="fc" pos="0 0 0.015"/>          <!-- Z 11 .. 19 mm, mũi tên trên FC chỉ về +X -->
+      <!-- vị trí chip IMU (BMI088), áp kế (SPL06), la bàn (QMC5883L): giữa mạch FC, trục trùng trục drone -->
+      <site name="imu" pos="0 0 0.015"/>
+      <geom class="dau_oc" fromto="0.01525 0.01525 0 0.01525 0.01525 -0.0024"/>
+      <geom class="oc20" fromto="0.01525 0.01525 0 0.01525 0.01525 0.020"/>
+      <geom class="dau_oc" fromto="0.01525 -0.01525 0 0.01525 -0.01525 -0.0024"/>
+      <geom class="oc20" fromto="0.01525 -0.01525 0 0.01525 -0.01525 0.020"/>
+      <geom class="dau_oc" fromto="-0.01525 0.01525 0 -0.01525 0.01525 -0.0024"/>
+      <geom class="oc20" fromto="-0.01525 0.01525 0 -0.01525 0.01525 0.020"/>
+      <geom class="dau_oc" fromto="-0.01525 -0.01525 0 -0.01525 -0.01525 -0.0024"/>
+      <geom class="oc20" fromto="-0.01525 -0.01525 0 -0.01525 -0.01525 0.020"/>
+
+      <!-- ===== PIN: nằm dọc thân trên tấm nóc (mặt trên Z = 25 mm), giữa drone theo X ===== -->
+      <geom name="pin" class="pin" pos="0 0 0.043"/>        <!-- Z 25 .. 61 mm -->
+      <geom name="va_cham_pin" type="box" size="0.0365 0.0175 0.018" pos="0 0 0.043"
+            contype="1" conaffinity="1" mass="0" rgba="0 0 0 0"/>
+
+      <!-- ===== MOTOR + CÁNH (đánh số theo PX4 Quad X) ===== -->
+      <!-- M1 truoc phai, quay ngược chiều kim đồng hồ -->
+      <geom name="motor_m1" class="motor" pos="0.0674 -0.082 0.0091"/>
+      <geom name="canh_m1" class="canh" pos="0.0674 -0.082 0.022"/>
+      <site name="m1" pos="0.0674 -0.082 0.022"/>
+      <!-- M2 sau trai, quay ngược chiều kim đồng hồ -->
+      <geom name="motor_m2" class="motor" pos="-0.0674 0.082 0.0091"/>
+      <geom name="canh_m2" class="canh" pos="-0.0674 0.082 0.022"/>
+      <site name="m2" pos="-0.0674 0.082 0.022"/>
+      <!-- M3 truoc trai, quay thuận chiều kim đồng hồ -->
+      <geom name="motor_m3" class="motor" pos="0.0674 0.0819 0.0091"/>
+      <geom name="canh_m3" class="canh" pos="0.0674 0.0819 0.022"/>
+      <site name="m3" pos="0.0674 0.0819 0.022"/>
+      <!-- M4 sau phai, quay thuận chiều kim đồng hồ -->
+      <geom name="motor_m4" class="motor" pos="-0.0674 -0.0819 0.0091"/>
+      <geom name="canh_m4" class="canh" pos="-0.0674 -0.0819 0.022"/>
+      <site name="m4" pos="-0.0674 -0.0819 0.022"/>
+
+      <!-- hình va chạm đơn giản, không có khối lượng: 1 hộp thân -->
+      <geom name="va_cham_than" type="box" size="0.067 0.031 0.019" pos="-0.007 0 0.0085"
+            contype="1" conaffinity="1" density="0" rgba="0 0 0 0"/>
+    </body>
+  </worldbody>
+
+  <!-- CẢM BIẾN: MuJoCo trả số ĐÚNG TUYỆT ĐỐI. Nhiễu, lệch, rung, lọc, trễ thêm trong envs/sensors.py -->
+  <sensor>
+    <gyro name="gyro" site="imu"/>                   <!-- tốc độ xoay, hệ thân, rad/s -->
+    <accelerometer name="accel" site="imu"/>         <!-- gia tốc riêng, hệ thân, m/s² (đứng yên đọc +9.81 trục z) -->
+    <magnetometer name="mag" site="imu"/>            <!-- từ trường, hệ thân, gauss -->
+    <framepos name="pos_imu" objtype="site" objname="imu"/>   <!-- vị trí thật, dùng làm áp kế (lấy độ cao z) -->
+    <framelinvel name="vel_imu" objtype="site" objname="imu"/> <!-- vận tốc thật (thế giới), dùng cho GPS -->
+  </sensor>
+
+  <actuator>
+    <!-- motor quay THUẬN chiều kim đồng hồ -> thân bị xoắn ngược lại -> mô-men z = +k
+         motor quay NGƯỢC chiều kim đồng hồ -> mô-men z = -k        (k = 0.0123 m) -->
+    <motor name="m1" class="luc_day" site="m1" gear="0 0 1 0 0 -0.0123"/>   <!-- truoc phai -->
+    <motor name="m2" class="luc_day" site="m2" gear="0 0 1 0 0 -0.0123"/>   <!-- sau trai -->
+    <motor name="m3" class="luc_day" site="m3" gear="0 0 1 0 0 +0.0123"/>   <!-- truoc trai -->
+    <motor name="m4" class="luc_day" site="m4" gear="0 0 1 0 0 +0.0123"/>   <!-- sau phai -->
+  </actuator>
+</mujoco>
